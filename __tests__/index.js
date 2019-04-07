@@ -7,9 +7,13 @@ if (withAuth == it.skip) {
                  'skipping authed tests')
 }
 
-withAuth('login', async () => {
+withAuth('login/logout', async () => {
     const client = new DuolingoClient()
+    expect(client.jwt).toBeNull()
     await client.login(DUOLINGO_USERNAME, DUOLINGO_PASSWORD)
+    expect(client.jwt).not.toBeNull()
+    client.logout()
+    expect(client.jwt).toBeNull()
 })
 
 it('login failure', async () => {

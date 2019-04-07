@@ -2,7 +2,8 @@ const http = require('./http')
 
 class DuolingoClient {
     constructor() {
-        this.jwt = null
+        // initialize logged out state
+        this.logout()
     }
 
     async login(username, password) {
@@ -14,6 +15,11 @@ class DuolingoClient {
         }
         this.jwt = res.headers.get('jwt')
     }
+
+    logout() {
+        this.jwt = null
+    }
+
 }
 
 module.exports = {
