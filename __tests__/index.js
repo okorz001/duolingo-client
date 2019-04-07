@@ -1,9 +1,15 @@
 const {DuolingoClient} = require('../index')
 
-it('login', async () => {
+const {DUOLINGO_USERNAME, DUOLINGO_PASSWORD} = process.env
+const withAuth = DUOLINGO_USERNAME && DUOLINGO_PASSWORD ? it : it.skip
+if (withAuth == it.skip) {
+    console.warn('DUOLINGO_USERNAME or DUOLINGO_PASSWORD is undefined,',
+                 'skipping authed tests')
+}
+
+withAuth('login', async () => {
     const client = new DuolingoClient()
-    // TODO: need VCS safe way to test login... environment variables?
-    //await client.login(username, password)
+    await client.login(DUOLINGO_USERNAME, DUOLINGO_PASSWORD)
 })
 
 it('login failure', async () => {
