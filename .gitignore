@@ -1,0 +1,4 @@
+# npm
+node_modules/
+# mostly useless for library, very noisy
+package-lock.json

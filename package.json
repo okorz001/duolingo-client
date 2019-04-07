@@ -1,0 +1,28 @@
+{
+  "name": "duolingo-client",
+  "version": "1.0.0",
+  "description": "Duolingo Client for JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okorz001/duolingo-client-js.git"
+  },
+  "keywords": [
+    "duolingo"
+  ],
+  "author": "Oscar Korz <okorz001@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/okorz001/duolingo-client-js/issues"
+  },
+  "homepage": "https://github.com/okorz001/duolingo-client-js#readme",
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}
