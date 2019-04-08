@@ -55,9 +55,9 @@ These endpoints require the following headers:
 * `Authorization: Bearer ${JWT}` where `JWT` is retrieved from login endpoint
   above.
 
-### `https://www.duolingo.com/2017-06-30/users/491392036`
+### `https://www.duolingo.com/2017-06-30/users/${USER_ID}`
 
-### `https://www.duolingo.com/2017-06-30/users/491392036/subscriptions`
+### `https://www.duolingo.com/2017-06-30/users/${USER_ID}/subscriptions`
 
 ### `https://www.duolingo.com/api/1/store/get_items`
 
