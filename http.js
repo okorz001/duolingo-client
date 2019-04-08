@@ -40,7 +40,7 @@ async function handleResponse(res) {
         headers: res.headers,
     }
     const type = res.headers.get('Content-Type') || 'text/plain'
-    if (type.match(/^application\/json[;$]/)) {
+    if (type.match(/^application\/json($|;)/)) {
         result.body = await res.json()
     }
     else {
