@@ -37,7 +37,8 @@ class DuolingoClient {
         return {
             id: res.body.id,
             username: res.body.username,
-            fullname: res.body.fullname,
+            // fullname may be undefined
+            displayName: res.body.fullname || res.body.username,
             streak: {
                 length: res.body.site_streak,
                 extended: res.body.streak_extended_today,
