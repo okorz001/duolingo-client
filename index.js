@@ -13,11 +13,17 @@ class DuolingoClient {
         if (res.body.failure) {
             throw new Error(`Login for '${username}' failed: ${res.body.message}`)
         }
-        this.jwt = res.headers.get('jwt')
+        this.auth = {
+            username,
+            userId: res.body.user_id,
+            headers: {
+                authorization: `Bearer ${res.headers.get('jwt')}`,
+            },
+        }
     }
 
     logout() {
-        this.jwt = null
+        this.auth = {}
     }
 
     async getUser(username) {

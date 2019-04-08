@@ -9,11 +9,19 @@ if (withAuth == it.skip) {
 
 withAuth('login/logout', async () => {
     const client = new DuolingoClient()
-    expect(client.jwt).toBeNull()
+    expect(client.auth).toEqual({})
+
     await client.login(DUOLINGO_USERNAME, DUOLINGO_PASSWORD)
-    expect(client.jwt).not.toBeNull()
+    expect(client.auth).toMatchObject({
+        username: DUOLINGO_USERNAME,
+        userId: expect.anything(),
+        headers: {
+            authorization: expect.stringMatching(/^Bearer /),
+        }
+    })
+
     client.logout()
-    expect(client.jwt).toBeNull()
+    expect(client.auth).toEqual({})
 })
 
 it('login failure', async () => {
