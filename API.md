@@ -21,15 +21,16 @@ These endpoints do not require any special headers.
 ### `https://www.duolingo.com/users/${USERNAME}`
 
 * Returns a lot of information about a user; consider caching.
+* This endpoint returns more information if you are logged-in as this user.
 * User id is found in `id` field. (Many endpoints use ids instead of names.)
 * `language_data` field only has a single child object for the active
   language. This child object has a lot of information.
   * If this is your user, you may want to call this endpoint once for
     every language (by cycling your active language).
   * `skills.*.known_lexemes` has ids for learned lexemes.
-  * `skills.*.progress_v3_debug_info.original_debug_info.lexeme_ids_by_lessons.*`
-    has ids for all lexemes in the course, regardless of their progress.
-* This endpoint returns more information if you are logged-in as this user.
+  * `skills.*.progress_v3_debug_info.lexeme_ids_by_lessons.*` has ids for all
+    lexemes in the course, regardless of their progress.
+  * `skills.*.words` is missing some lexemes.
 
 ### `http://d2.duolingo.com/api/1/dictionary/hints/${TO}/${FROM}`
 
@@ -47,6 +48,11 @@ These endpoints do not require any special headers.
 
 * Requires query parameter `lexeme_id`.
 * Returns translations and sample sentences for a lexeme.
+
+### `https://www.duolingo.com/api/1/skills/show`
+
+* Requires query parameter `id` which is a skill id.
+* Returns information about a skill, including words.
 
 ### `https://www.duolingo.com/login`
 
