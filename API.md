@@ -23,9 +23,12 @@ These endpoints do not require any special headers.
 * Returns a lot of information about a user; consider caching.
 * User id is found in `id` field. (Many endpoints use ids instead of names.)
 * `language_data` field only has a single child object for the active
-  language.
+  language. This child object has a lot of information.
   * If this is your user, you may want to call this endpoint once for
     every language (by cycling your active language).
+  * `skills.*.known_lexemes` has ids for learned lexemes.
+  * `skills.*.progress_v3_debug_info.original_debug_info.lexeme_ids_by_lessons.*`
+    has ids for all lexemes in the course, regardless of their progress.
 * This endpoint returns more information if you are logged-in as this user.
 
 ### `http://d2.duolingo.com/api/1/dictionary/hints/${TO}/${FROM}`
@@ -33,12 +36,17 @@ These endpoints do not require any special headers.
 * Different host, doesn't require HTTPS.
 * `TO` and `FROM` are language ids, e.g. `en` or `es`.
 * Requires exactly one of the following query parameters:
-  * `token`: A single token to translate, e.g. `one`. Note that a token
+  * `token`: A single lexeme to translate, e.g. `one`. Note that a lexeme
     may include multiple words, e.g. `elder brother`.
-  * `tokens`: A JSON array of independent tokens to translate in a batch,
+  * `tokens`: A JSON array of independent lexemes to translate in a batch,
     e.g. `["one","two"]`.
   * `sentence`: A sentence or phrase to provide translation hints for, e.g. `one
     fish`. (This is probably not useful.)
+
+### `https://www.duolingo.com/api/1/dictionary_page`
+
+* Requires query parameter `lexeme_id`.
+* Returns translations and sample sentences for a lexeme.
 
 ### `https://www.duolingo.com/login`
 
@@ -64,3 +72,6 @@ These endpoints require the following headers:
 ### `https://www.duolingo.com/2017-06-30/shop-items`
 
 ### `https://www.duolingo.com/vocabulary/overview`
+
+* Returns information about your active language.
+* `vocab_overview` returns lexemes that you have learned.
