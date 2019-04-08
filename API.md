@@ -13,12 +13,12 @@ is also useful for those who wish to call Duolingo APIs directly themselves.
 
 These endpoints do not require any special headers.
 
-### https://www.duolingo.com/2017-06-30/config
+### `https://www.duolingo.com/2017-06-30/config`
 
 * Returns global information about Duolingo.
 * The `courses` field describes available languages.
 
-### https://www.duolingo.com/users/${USERNAME}
+### `https://www.duolingo.com/users/${USERNAME}`
 
 * Returns a lot of information about a user; consider caching.
 * User id is found in `id` field. (Many endpoints use ids instead of names.)
@@ -28,7 +28,7 @@ These endpoints do not require any special headers.
     every language (by cycling your active language).
 * This endpoint returns more information if you are logged-in as this user.
 
-### http://d2.duolingo.com/api/1/dictionary/hints/${TO}/${FROM}
+### `http://d2.duolingo.com/api/1/dictionary/hints/${TO}/${FROM}`
 
 * Different host, doesn't require HTTPS.
 * `TO` and `FROM` are language ids, e.g. `en` or `es`.
@@ -40,7 +40,7 @@ These endpoints do not require any special headers.
   * `sentence`: A sentence or phrase to provide translation hints for, e.g. `one
     fish`. (This is probably not useful.)
 
-### https://www.duolingo.com/login
+### `https://www.duolingo.com/login`
 
 * `POST` with a JSON containing `login` and `password` fields.
 * Will return `200` even on rejected password; check for `failure` field.
@@ -55,12 +55,12 @@ These endpoints require the following headers:
 * `Authorization: Bearer ${JWT}` where `JWT` is retrieved from login endpoint
   above.
 
-### https://www.duolingo.com/2017-06-30/users/491392036
+### `https://www.duolingo.com/2017-06-30/users/491392036`
 
-### https://www.duolingo.com/2017-06-30/users/491392036/subscriptions
+### `https://www.duolingo.com/2017-06-30/users/491392036/subscriptions`
 
-### https://www.duolingo.com/api/1/store/get_items
+### `https://www.duolingo.com/api/1/store/get_items`
 
-### https://www.duolingo.com/2017-06-30/shop-items
+### `https://www.duolingo.com/2017-06-30/shop-items`
 
-### https://www.duolingo.com/vocabulary/overview
+### `https://www.duolingo.com/vocabulary/overview`
