@@ -1,0 +1,67 @@
+{
+  "tokens": [
+    {
+      "hint_table": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "hint": "1"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "hint": "una"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "hint": "un"
+              }
+            ]
+          }
+        ],
+        "references": []
+      },
+      "index": 0,
+      "value": "one"
+    },
+    {
+      "value": " "
+    },
+    {
+      "hint_table": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "hint": "pescado"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "hint": "pescados"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "hint": "peces"
+              }
+            ]
+          }
+        ],
+        "references": []
+      },
+      "index": 1,
+      "value": "fish"
+    }
+  ]
+}

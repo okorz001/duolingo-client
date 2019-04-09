@@ -1,0 +1,212 @@
+{
+  "trackingProperties": {
+    "geoip_country": "US"
+  },
+  "minCacheTimestamp": 0,
+  "dictionaryHost": "d2.duolingo.com",
+  "ageRestrictionLimit": 13,
+  "courses": {
+    "el": [
+      "en"
+    ],
+    "en": [
+      "hv",
+      "es",
+      "id",
+      "da",
+      "ru",
+      "sw",
+      "pl",
+      "zh",
+      "ro",
+      "hi",
+      "ja",
+      "ga",
+      "el",
+      "eo",
+      "tlh",
+      "tr",
+      "fr",
+      "vi",
+      "it",
+      "hw",
+      "de",
+      "nv",
+      "he",
+      "no-BO",
+      "sv",
+      "pt",
+      "uk",
+      "hu",
+      "nl-NL",
+      "cy",
+      "cs",
+      "ko"
+    ],
+    "zh": [
+      "es",
+      "en"
+    ],
+    "vi": [
+      "en"
+    ],
+    "it": [
+      "de",
+      "es",
+      "en",
+      "fr"
+    ],
+    "ar": [
+      "sv",
+      "fr",
+      "en",
+      "de"
+    ],
+    "cs": [
+      "en"
+    ],
+    "id": [
+      "en"
+    ],
+    "es": [
+      "ru",
+      "gn",
+      "eo",
+      "pt",
+      "de",
+      "fr",
+      "en",
+      "it",
+      "ca"
+    ],
+    "ru": [
+      "en",
+      "de",
+      "es",
+      "fr"
+    ],
+    "pt": [
+      "es",
+      "en",
+      "it",
+      "fr",
+      "de",
+      "eo"
+    ],
+    "tr": [
+      "en",
+      "de",
+      "ru"
+    ],
+    "nl-NL": [
+      "en"
+    ],
+    "th": [
+      "en"
+    ],
+    "ro": [
+      "en"
+    ],
+    "pl": [
+      "en"
+    ],
+    "fr": [
+      "en",
+      "es",
+      "pt",
+      "de",
+      "it"
+    ],
+    "de": [
+      "en",
+      "es",
+      "fr"
+    ],
+    "hu": [
+      "en"
+    ],
+    "hi": [
+      "en"
+    ],
+    "ja": [
+      "en"
+    ],
+    "ko": [
+      "en"
+    ],
+    "uk": [
+      "en"
+    ]
+  },
+  "xpLevelCutoffs": [
+    60,
+    120,
+    200,
+    300,
+    450,
+    750,
+    1125,
+    1650,
+    2250,
+    3000,
+    3900,
+    4900,
+    6000,
+    7500,
+    9000,
+    10500,
+    12000,
+    13500,
+    15000,
+    17000,
+    19000,
+    22500,
+    26000,
+    30000
+  ],
+  "speechHost": "speech.duolingo.com",
+  "ipCountry": "US",
+  "featureFlags": {
+    "job_board": true,
+    "ios_completed_tree_app_rating_probability": 0.05,
+    "ios_static_network_tracking_probability": 0.1,
+    "ios_juicy_rollout": 1,
+    "ios_show_season_2_podcast_ad": true,
+    "china_ios_network_tracking_probability": 0.08,
+    "disable_user_refreshes_for_notifications": false,
+    "china_support_phone_number_registration": 1,
+    "acquisition_ios_facebook_web_login_rollout": 0,
+    "athena_minimum_app_version": "0.0.1.4",
+    "ios_old_user_app_rating_probability": 0.01,
+    "ios_network_tracking_probability": 0.002,
+    "delay_clubs_firebase_android": false,
+    "local_grading_regression_log": true,
+    "ios_enable_korean": true,
+    "ios_registration_refactoring": 1,
+    "android_disable_local_notifications": false,
+    "disable_en_hi_offline_basics1_test": false,
+    "duolingo_for_schools": true,
+    "disable_leagues_auto_refresh": false,
+    "use_newrelic_on_ios": true,
+    "clubs_firebase_event_count": 20,
+    "ios_rollbar_report_http_unknown": false,
+    "china_endpoint_static": 1,
+    "midas_ios_plus_after_course_v2_rollout": 0,
+    "disable_clubs_ios": false,
+    "delay_clubs_firebase_ios": true,
+    "ios_remove_step_by_step_registration_controller": 1,
+    "android_new_relic_fraction": 0.003,
+    "ios_custom_app_rating_modal_probability_2": 0.05,
+    "android_enable_korean": true,
+    "disable_google_recognizer": false,
+    "disable_clubs_android": false,
+    "disable_discussions": false,
+    "china_asynchronous_welcome": true,
+    "ios_custom_app_rating_modal_probability": 0,
+    "china_endpoint": 1,
+    "china_ios_network_error_logging_probability": 0.01,
+    "android_enable_podcast_season_2": true,
+    "android_juicy": 0.2,
+    "ios_disable_skill_test_offline": false
+  }
+}
