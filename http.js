@@ -53,4 +53,5 @@ async function handleResponse(res) {
 module.exports = {
     get,
     post,
+    request,
 }
