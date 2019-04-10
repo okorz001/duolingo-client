@@ -1,6 +1,7 @@
 const fs = require('fs')
 const {promisify} = require('util')
 
+const getJwt = require('../get-jwt')
 const jsonHttpFetch = require('../json-http-fetch')
 
 const writeFile = promisify(fs.writeFile)
@@ -99,17 +100,6 @@ async function update(endpoint, headers) {
         console.error(`${method} ${endpoint.url} FAILED`)
         console.error(err)
     }
-}
-
-async function getJwt(login, password) {
-    const res = await jsonHttpFetch('POST',
-                                    'https://www.duolingo.com/api',
-                                    {},
-                                    {login, password})
-    if (res.body.failure) {
-        throw new Error(res.body.message)
-    }
-    return res.headers.get('jwt')
 }
 
 main().catch(console.error)

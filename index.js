@@ -1,3 +1,4 @@
+const getJwt = require('./get-jwt')
 const jsonHttpFetch = require('./json-http-fetch')
 
 class DuolingoClient {
@@ -7,18 +8,11 @@ class DuolingoClient {
     }
 
     async login(username, password) {
-        const url = 'https://www.duolingo.com/login'
-        const body = {login: username, password}
-        const res = await jsonHttpFetch('POST', url, {}, body)
-        // error still returns 200, but sets "failure" key
-        if (res.body.failure) {
-            throw new Error(`Login for '${username}' failed: ${res.body.message}`)
-        }
+        const jwt = await getJwt(username, password)
         this.auth = {
             username,
-            userId: res.body.user_id,
             headers: {
-                authorization: `Bearer ${res.headers.get('jwt')}`,
+                authorization: `Bearer ${jwt}`,
             },
         }
     }
