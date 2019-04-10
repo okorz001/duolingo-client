@@ -1,4 +1,4 @@
-const http = require('./http')
+const jsonHttpFetch = require('./json-http-fetch')
 
 class DuolingoClient {
     constructor() {
@@ -7,8 +7,9 @@ class DuolingoClient {
     }
 
     async login(username, password) {
+        const url = 'https://www.duolingo.com/login'
         const body = {login: username, password}
-        const res = await http.post('https://www.duolingo.com/login', body)
+        const res = await jsonHttpFetch('POST', url, {}, body)
         // error still returns 200, but sets "failure" key
         if (res.body.failure) {
             throw new Error(`Login for '${username}' failed: ${res.body.message}`)
@@ -28,7 +29,8 @@ class DuolingoClient {
 
     async getUser(username) {
         // this URL returns more data when you are logged in as the same user
-        const res = await http.get(`https://www.duolingo.com/users/${username}`)
+        const url =`https://www.duolingo.com/users/${username}`
+        const res = await jsonHttpFetch('GET', url)
         const languages = res.body.languages
             // ignore languages that aren't being learned
             .filter(it => it.learning)

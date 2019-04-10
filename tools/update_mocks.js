@@ -1,7 +1,7 @@
 const fs = require('fs')
 const {promisify} = require('util')
 
-const http = require('../http')
+const jsonHttpFetch = require('../json-http-fetch')
 
 const writeFile = promisify(fs.writeFile)
 
@@ -85,19 +85,27 @@ async function main() {
 
 async function update(endpoint, headers) {
     const method = endpoint.method || 'GET'
-    const res = await http.request(method,
-                                   endpoint.url,
-                                   endpoint.body,
-                                   headers)
-    const file = `${OUT_DIR}/${endpoint.out}`
-    const text = JSON.stringify(res.body, null, '  ') + '\n'
-    await writeFile(file, text, 'utf8')
-    console.log(`${method} ${endpoint.url} => ${file}`)
+    try {
+        const res = await jsonHttpFetch(method,
+                                        endpoint.url,
+                                        headers,
+                                        endpoint.body)
+        const file = `${OUT_DIR}/${endpoint.out}`
+        const text = JSON.stringify(res.body, null, '  ') + '\n'
+        await writeFile(file, text, 'utf8')
+        console.log(`${method} ${endpoint.url} => ${file}`)
+    }
+    catch (err) {
+        console.error(`${method} ${endpoint.url} FAILED`)
+        console.error(err)
+    }
 }
 
 async function getJwt(login, password) {
-    const body = {login, password}
-    const res = await http.post('https://www.duolingo.com/api', body)
+    const res = await jsonHttpFetch('POST',
+                                    'https://www.duolingo.com/api',
+                                    {},
+                                    {login, password})
     if (res.body.failure) {
         throw new Error(res.body.message)
     }
