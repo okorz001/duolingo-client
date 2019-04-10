@@ -4,8 +4,9 @@
   "description": "Duolingo Client for JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "jest --testRegex '\\.test\\.js$'",
-    "itest": "jest --testRegex '\\.itest\\.js$'",
+    "test": "npm-run-all test:*",
+    "test:unit": "jest --testRegex '\\.test\\.js$'",
+    "test:integration": "jest --testRegex '\\.itest\\.js$'",
     "update_mocks": "node tools/update_mocks"
   },
   "repository": {
@@ -25,7 +26,8 @@
     "node": ">=7.6.0"
   },
   "devDependencies": {
-    "jest": "^24.7.1"
+    "jest": "^24.7.1",
+    "npm-run-all": "^4.1.5"
   },
   "dependencies": {
     "isomorphic-fetch": "^2.2.1"
