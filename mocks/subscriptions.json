@@ -1,1 +1,14 @@
-{}
+{
+  "subscriptions": [
+    {
+      "username": "Luis",
+      "picture": "//duolingo-images.s3.amazonaws.com/avatars/14/5wZgHBKGS6",
+      "name": "Luis",
+      "monthlyXp": 180,
+      "weeklyXp": 40,
+      "totalXp": 54486,
+      "id": 14,
+      "hasPlus": true
+    }
+  ]
+}
