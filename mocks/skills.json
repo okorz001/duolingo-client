@@ -1,1 +1,99 @@
-"<!DOCTYPE html><html dir=\"ltr\"><head><title>Duolingo</title><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,user-scalable=no\"><meta name=\"robots\" content=\"NOODP\"><meta name=\"theme-color\" content=\"#eeeeee\"><noscript><meta http-equiv=\"refresh\" content=\"0; url=/nojs/splash\"></noscript><meta name=\"apple-mobile-web-app-capable\" content=\"yes\"><meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\"><meta name=\"apple-mobile-web-app-title\" content=\"Duolingo\"><meta name=\"google\" content=\"notranslate\"><meta name=\"mobile-web-app-capable\" content=\"yes\"><meta name=\"apple-itunes-app\" content=\"app-id=570060128\"><link rel=\"apple-touch-icon\" href=\"//d35aaqx5ub95lt.cloudfront.net/images/duolingo-touch-icon.png\"><link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"//d35aaqx5ub95lt.cloudfront.net/favicon.ico\"><link href=\"//d35aaqx5ub95lt.cloudfront.net/css/ltr-24b948d3.css\" rel=\"stylesheet\"> <link rel=\"manifest\" href=\"/manifest.json\"><meta name=\"twitter:site\" content=\"@duolingo\" /><meta name=\"twitter:image\" content=\"https://www.duolingo.com/images/facebook/duo200.png\" /><meta name=\"twitter:description\" content=\"Learn languages by playing a game. It's 100% free, fun, and scientifically proven to work.\" /><meta name=\"twitter:title\" content=\"Duolingo - Learn a language for free @duolingo\" /><meta name=\"twitter:card\" content=\"summary\" /><meta property=\"og:url\" content=\"https://www.duolingo.com/api/1/skills/show\" /><meta property=\"og:site_name\" content=\"Duolingo\" /><meta property=\"og:type\" content=\"website\" /><meta property=\"og:description\" content=\"Learn languages by playing a game. It's 100% free, fun, and scientifically proven to work.\" /><meta property=\"og:title\" content=\"Learn a language for free\" /><meta property=\"fb:app_id\" content=\"234536436609303\" /><meta property=\"og:image\" content=\"https://www.duolingo.com/images/facebook/duo200.png\" /><meta name=\"keywords\" content=\"learn, spanish, german, french, portuguese, italian, english, free, lessons, course, language, study, flashcards\" /><meta name=\"description\" content=\"Duolingo is the world's most popular way to learn a language. It's 100% free, fun and science-based. Practice online on duolingo.com or on the apps!\" /><link rel=\"alternate\" hreflang=\"ar\" href=\"https://ar.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"cs\" href=\"https://cs.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"de\" href=\"https://de.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"el\" href=\"https://el.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"en\" href=\"https://www.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"es\" href=\"https://es.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"fr\" href=\"https://fr.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"hi\" href=\"https://hi.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"hu\" href=\"https://hu.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"id\" href=\"https://id.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"it\" href=\"https://it.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"ja\" href=\"https://ja.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"ko\" href=\"https://ko.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"nl\" href=\"https://nl-nl.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"pl\" href=\"https://pl.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"pt\" href=\"https://pt.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"ro\" href=\"https://ro.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"ru\" href=\"https://ru.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"th\" href=\"https://th.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"tr\" href=\"https://tr.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"uk\" href=\"https://uk.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"vi\" href=\"https://vi.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"x-default\" href=\"https://www.duolingo.com/api/1/skills/show\" /><link rel=\"alternate\" hreflang=\"zh\" href=\"http://www.duolingo.cn/api/1/skills/show\" /><link rel=\"canonical\" href=\"https://www.duolingo.com/api/1/skills/show\" id=\"canonical\" /></head><body><div id=\"root\"></div><script>window.duo={\"detUiLanguages\":[\"en\",\"es\",\"pt\",\"it\",\"fr\",\"de\",\"ja\",\"zs\",\"zt\",\"ko\",\"ru\",\"hi\",\"hu\",\"tr\"],\"troubleshootingForumId\":647,\"uiLanguage\":\"en\",\"oldWebUrlWhitelist\":[\"^/comment/\",\"^/design$\",\"^/discussion$\",\"^/topic/\"]}</script><script>window.duo.version=\"a95232b\"</script><script>!function(r){function n(t){if(e[t])return e[t].exports;var s=e[t]={i:t,l:!1,exports:{}};return r[t].call(s.exports,s,s.exports,n),s.l=!0,s.exports}var t=window.webpackJsonp;window.webpackJsonp=function(e,i,o){for(var a,c,f,u=0,g=[];u<e.length;u++)c=e[u],s[c]&&g.push(s[c][0]),s[c]=0;for(a in i)Object.prototype.hasOwnProperty.call(i,a)&&(r[a]=i[a]);for(t&&t(e,i,o);g.length;)g.shift()();if(o)for(u=0;u<o.length;u++)f=n(n.s=o[u]);return f};var e={},s={31:0};n.e=function(r){function t(){a.onerror=a.onload=null,clearTimeout(c);var n=s[r];0!==n&&(n&&n[1](new Error(\"Loading chunk \"+r+\" failed.\")),s[r]=void 0)}var e=s[r];if(0===e)return new Promise(function(r){r()});if(e)return e[2];var i=new Promise(function(n,t){e=s[r]=[n,t]});e[2]=i;var o=document.getElementsByTagName(\"head\")[0],a=document.createElement(\"script\");a.type=\"text/javascript\",a.charset=\"utf-8\",a.async=!0,a.timeout=12e4,n.nc&&a.setAttribute(\"nonce\",n.nc),a.src=n.p+\"\"+({0:\"js/vendor\",1:\"js/app\",2:\"strings/zh-TW\",3:\"strings/zh-CN\",4:\"strings/vi\",5:\"strings/uk\",6:\"strings/tr\",7:\"strings/tl\",8:\"strings/th\",9:\"strings/te\",10:\"strings/ta\",11:\"strings/ru\",12:\"strings/ro\",13:\"strings/pt\",14:\"strings/pl\",15:\"strings/pa\",16:\"strings/nl-NL\",17:\"strings/ko\",18:\"strings/ja\",19:\"strings/it\",20:\"strings/id\",21:\"strings/hu\",22:\"strings/hi\",23:\"strings/fr\",24:\"strings/es\",25:\"strings/en\",26:\"strings/el\",27:\"strings/de\",28:\"strings/cs\",29:\"strings/bn\",30:\"strings/ar\"}[r]||r)+\"-\"+{0:\"a49663e3\",1:\"c24621f6\",2:\"cf35eab8\",3:\"45a84642\",4:\"1a9ab2de\",5:\"f563eb1a\",6:\"61cec5cc\",7:\"5ea0097d\",8:\"dbd81218\",9:\"30952c76\",10:\"dfdfd266\",11:\"3cb2336a\",12:\"4e61bbb1\",13:\"cee4f838\",14:\"7855d6b0\",15:\"9be21590\",16:\"84cfdbc4\",17:\"8e5ae481\",18:\"5929a0ef\",19:\"8b1c5bd9\",20:\"9496cb7a\",21:\"bc2b84d2\",22:\"a875611f\",23:\"1f03f0cb\",24:\"a862b474\",25:\"22782fab\",26:\"de36c45a\",27:\"355b406c\",28:\"378da5c4\",29:\"f075eee7\",30:\"a068f118\"}[r]+\".js\";var c=setTimeout(t,12e4);return a.onerror=a.onload=t,o.appendChild(a),i},n.m=r,n.c=e,n.d=function(r,t,e){n.o(r,t)||Object.defineProperty(r,t,{configurable:!1,enumerable:!0,get:e})},n.n=function(r){var t=r&&r.__esModule?function(){return r.default}:function(){return r};return n.d(t,\"a\",t),t},n.o=function(r,n){return Object.prototype.hasOwnProperty.call(r,n)},n.p=\"/\",n.oe=function(r){throw console.error(r),r}}([])</script><script src=\"//d35aaqx5ub95lt.cloudfront.net/js/vendor-a49663e3.js\"></script>                       <script src=\"//d35aaqx5ub95lt.cloudfront.net/strings/en-22782fab.js\"></script>     <script src=\"//d35aaqx5ub95lt.cloudfront.net/js/app-c24621f6.js\"></script><noscript><div style=\"position:fixed; top:0; left:0; display:none\" width=\"1\" height=\"1\"><img src=\"//collector-PXAsQJFZ9W.perimeterx.net/api/v1/collector/noScript.gif?appId=PXAsQJFZ9W\" alt=\"PxPixel\"></div></noscript></body></html>"
+{
+  "language_string": "Spanish",
+  "dependencies_name": [],
+  "practice_recommended": false,
+  "disabled": false,
+  "test_count": 3,
+  "lesson": false,
+  "has_explanation": true,
+  "url_title": "Intro",
+  "icon_color": "blue",
+  "category": "",
+  "num_lessons": 3,
+  "strength": 0,
+  "beginner": true,
+  "title": "Introduction",
+  "coords_y": 1,
+  "coords_x": 2,
+  "id": "7df994e56b4513b3517f911b56e142d2",
+  "test": true,
+  "lesson_number": 1,
+  "learned": false,
+  "num_translation_nodes": 0,
+  "achievements": [],
+  "description": "",
+  "index": "0",
+  "bonus": false,
+  "explanation": "<h5>Masculine and Feminine Nouns</h5><p>In Spanish all nouns are masculine or feminine. Usually, nouns that end with an \"o\" are masculine, and nouns that end with an \"a\" are feminine. For example, \"manzana\" (apple) is feminine and \"diario\" (newspaper) is masculine.</p><p>The articles \"el\" and \"un\" are used with masculine nouns, and the articles \"la\" and \"una\" are used with feminine nouns. \"The apple\" is \"la manzana\" and \"a newspaper\" is \"un diario.\"</p><h5>Accent Marks</h5><p>Vowels in Spanish can have an accent mark, such as the \"u\" in \"menú\" (menu). One use of the accent mark is to indicate which syllable should be stressed in the pronunciation. For example, in \"teléfono\" (telephone), the second \"e\" has the most stress.</p><p>Accent marks are also used to distinguish homophones. For example, \"él\" and \"el\" are homophones because they have the same pronunciation. However, \"él\" is a masculine pronoun (meaning \"he\" or \"him\") and \"el\" is a masculine article (meaning \"the\").</p><h5>The Second Person Singular</h5><p>\"Tú,\" \"usted\" and \"vos\" are different ways of referring to the second person singular (you). \"Usted\" is the formal way of saying \"you,\" and \"vos\" is used in informal speech in certain countries instead of \"tú.\"</p><p>The three pronouns are synonyms, but they change the way verbs are conjugated. For instance, for the verb \"comer\" (to eat), it is \"tú comes,\" \"usted come,\" and \"vos comés.\"</p><p>The decision of which form of \"you\" to use is regional and cultural, but you can typically use \"usted\" when referring to strangers.</p><h5>Verb Conjugation</h5>\n\n<p>Verb conjugation in Spanish is more complicated than in English. In Spanish, the verb endings change in order to describe who is doing the action and when. For example, for \"comer,\" \"I eat\" is \"yo como\" and \"you eat\" is \"tú comes.\"</p><p>Because the conjugations indicate who is doing the action, it is usually possible to omit the pronoun. For instance instead of saying \"yo como arroz\" (I eat rice), you can say \"como arroz.\"</p>",
+  "comment_data": {},
+  "dependencies": [],
+  "path": [
+    {
+      "index": 1,
+      "strength": 0,
+      "active": true,
+      "words": [
+        "el",
+        "hombre",
+        "la",
+        "mujer",
+        "yo",
+        "un",
+        "una",
+        "soy",
+        "niño",
+        "niña"
+      ],
+      "timed": false,
+      "lesson": 1,
+      "open": true
+    },
+    {
+      "index": 2,
+      "strength": 0,
+      "active": false,
+      "words": [
+        "él",
+        "es",
+        "ella",
+        "come",
+        "tú",
+        "eres",
+        "usted",
+        "manzanas"
+      ],
+      "timed": false,
+      "lesson": 2,
+      "open": false
+    },
+    {
+      "index": 3,
+      "strength": 0,
+      "active": false,
+      "words": [
+        "pan",
+        "como",
+        "comes",
+        "agua",
+        "leche",
+        "bebe",
+        "bebo",
+        "bebes"
+      ],
+      "timed": false,
+      "lesson": 3,
+      "open": false
+    },
+    {
+      "learned": false,
+      "learn_marker": true
+    }
+  ],
+  "short": "Intro",
+  "name": "BASICS",
+  "language": "es",
+  "new_index": 1,
+  "usid": "7a65d6cbd3a1a6b40fdde72af7c592fb",
+  "progress_percent": 0,
+  "mastered": false
+}

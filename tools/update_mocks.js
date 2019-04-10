@@ -44,6 +44,7 @@ const ENDPOINTS = [
     },
     {
         url: 'https://www.duolingo.com/api/1/skills/show?id=7df994e56b4513b3517f911b56e142d2',
+        auth: true,
         out: 'skills.json',
     },
     {

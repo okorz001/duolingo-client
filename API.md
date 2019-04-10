@@ -58,11 +58,6 @@ CEO. 😜
 * Requires query parameter `lexeme_id`.
 * Returns translations and sample sentences for a lexeme.
 
-### `https://www.duolingo.com/api/1/skills/show`
-
-* Requires query parameter `id` which is a skill id.
-* Returns information about a skill, including words.
-
 ### `https://www.duolingo.com/login`
 
 * `POST` with a JSON containing `login` and `password` fields.
@@ -116,3 +111,8 @@ The login endpoint also sets cookies, but these do not seem to be needed.
 
 * Returns information about your active language.
 * `vocab_overview` has the lexemes that you have learned.
+
+### `https://www.duolingo.com/api/1/skills/show`
+
+* Requires query parameter `id` which is a skill id.
+* Returns information about a skill, including words.
