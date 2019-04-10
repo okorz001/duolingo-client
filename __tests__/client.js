@@ -1,5 +1,5 @@
 const getJwt = require('../get-jwt')
-const {DuolingoClient} = require('../index')
+const DuolingoClient = require('../client')
 
 jest.mock('../get-jwt')
 
