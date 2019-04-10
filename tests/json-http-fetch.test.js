@@ -1,6 +1,6 @@
 require('isomorphic-fetch')
 
-const jsonHttpFetch = require('../json-http-fetch')
+const jsonHttpFetch = require('../src/json-http-fetch')
 const {createRequest, processResponse} = jsonHttpFetch
 
 it.each([

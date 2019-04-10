@@ -1,5 +1,5 @@
-const DuolingoClient = require('./client')
-const getJwt = require('./get-jwt')
+const DuolingoClient = require('./src/client')
+const getJwt = require('./src/get-jwt')
 
 module.exports = {
     DuolingoClient,

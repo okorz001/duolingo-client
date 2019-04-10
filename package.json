@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Duolingo Client for JavaScript",
   "main": "index.js",
+  "files": [
+    "src"
+  ],
   "scripts": {
     "test": "npm-run-all test:*",
     "test:unit": "jest --testRegex '\\.test\\.js$'",

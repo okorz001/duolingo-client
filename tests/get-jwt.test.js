@@ -1,7 +1,7 @@
-const getJwt = require('../get-jwt')
-const jsonHttpFetch = require('../json-http-fetch')
+const getJwt = require('../src/get-jwt')
+const jsonHttpFetch = require('../src/json-http-fetch')
 
-jest.mock('../json-http-fetch')
+jest.mock('../src/json-http-fetch')
 
 beforeEach(() => {
     jsonHttpFetch.mockReset()

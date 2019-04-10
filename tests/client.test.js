@@ -1,14 +1,14 @@
 const fs = require('fs')
 
-const DuolingoClient = require('../client')
-const getJwt = require('../get-jwt')
-const jsonHttpFetch = require('../json-http-fetch')
+const DuolingoClient = require('../src/client')
+const getJwt = require('../src/get-jwt')
+const jsonHttpFetch = require('../src/json-http-fetch')
 
 // 'npm test' runs in repo root, so this is relative to that
 const MOCK_DIR = 'mocks'
 
-jest.mock('../get-jwt')
-jest.mock('../json-http-fetch')
+jest.mock('../src/get-jwt')
+jest.mock('../src/json-http-fetch')
 
 it('login/logout', async () => {
     const client = new DuolingoClient()

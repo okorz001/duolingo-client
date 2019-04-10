@@ -1,4 +1,4 @@
-const getJwt = require('../get-jwt')
+const getJwt = require('../src/get-jwt')
 
 const {DUOLINGO_USERNAME, DUOLINGO_PASSWORD} = process.env
 let withAuth = it
