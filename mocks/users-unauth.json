@@ -6,29 +6,15 @@
       "level_progress": 30,
       "first_time": false,
       "bonus_rows": [],
-      "points_rank": 2,
+      "points_rank": 1,
       "fluency_score": 0,
       "level_tests": [],
       "direction_status": "released",
       "next_level": 2,
-      "linkedin_share_url": "https://www.linkedin.com/profile/add?pfCertStartDate=201904&pfCertificationUrl=https%3A%2F%2Fwww.duolingo.com%2Fracso9999&pfCertificationName=Duolingo+Vietnamese+Fluency%3A+Beginner+%28Estimated%29&_ed=0_7nTFLiuDkkQkdELSpruCwLkmmbYB836qOW60E1i6MtWLKXUevBcv8qZBCYleINUgaSgvthvZk7wTBMS3S-m0L6A6mLjErM6PJiwMkk6nYZylU7__75hCVwJdOTZCAkdv",
+      "linkedin_share_url": "https://www.linkedin.com/profile/add?pfCertStartDate=201904&pfCertificationUrl=https%3A%2F%2Fwww.duolingo.com%2FracsoTest1&pfCertificationName=Duolingo+Vietnamese+Fluency%3A+Beginner+%28Estimated%29&_ed=0_7nTFLiuDkkQkdELSpruCwLkmmbYB836qOW60E1i6MtWLKXUevBcv8qZBCYleINUgaSgvthvZk7wTBMS3S-m0L6A6mLjErM6PJiwMkk6nYZylU7__75hCVwJdOTZCAkdv",
       "points_ranking_data": [
         {
-          "username": "Luis",
-          "language_string": "Vietnamese",
-          "points_data": {
-            "languages": [],
-            "total": 54466
-          },
-          "avatar": "//duolingo-images.s3.amazonaws.com/avatars/14/5wZgHBKGS6",
-          "language": "vi",
-          "fullname": "Luis",
-          "id": 14,
-          "rank": 1,
-          "self": false
-        },
-        {
-          "username": "racso9999",
+          "username": "racsoTest1",
           "language_string": "Vietnamese",
           "points_data": {
             "languages": [],
@@ -38,8 +24,22 @@
           "language": "vi",
           "fullname": "Racso",
           "id": 491392036,
-          "rank": 2,
+          "rank": 1,
           "self": true
+        },
+        {
+          "username": "racsoTest2",
+          "language_string": "Vietnamese",
+          "points_data": {
+            "languages": [],
+            "total": 10
+          },
+          "avatar": "//s3.amazonaws.com/duolingo-images/avatar/default_2",
+          "language": "vi",
+          "fullname": "Racso",
+          "id": 492124355,
+          "rank": 2,
+          "self": false
         }
       ],
       "num_skills_learned": 2,
@@ -5368,27 +5368,27 @@
         {
           "language_string": "Vietnamese",
           "dependencies_name": [
-            "People",
-            "Abstract Objects 1",
-            "Present 4"
+            "Adjectives 1",
+            "Colors",
+            "Conjunctions"
           ],
           "practice_recommended": false,
           "disabled": false,
           "test_count": 3,
-          "missing_lessons": 3,
+          "missing_lessons": 4,
           "lesson": false,
-          "has_explanation": "",
-          "url_title": "Communication",
-          "icon_color": "red",
+          "has_explanation": true,
+          "url_title": "Numbers",
+          "icon_color": "blue",
           "category": "",
-          "num_lessons": 3,
+          "num_lessons": 4,
           "strength": 0,
           "beginner": false,
-          "title": "Communication",
+          "title": "Numbers",
           "level_sessions_finished": 0,
-          "coords_y": 27,
-          "coords_x": 2,
-          "id": "9b9cb445e931f602c211d2619386150b",
+          "coords_y": 11,
+          "coords_x": 0,
+          "id": "92f83402a6e76cc5d9a19556766b103a",
           "levels_finished": 0,
           "test": true,
           "lesson_number": 1,
@@ -5398,32 +5398,32 @@
           "description": "",
           "index": 0,
           "bonus": false,
-          "explanation": null,
-          "num_lexemes": 19,
-          "num_missing": 19,
+          "explanation": "<h3>From 0 to 10</h3>\n<p>Firstly, here are numbers from 0-10:</p>\n<table>\n<thead>\n<tr>\n<th>English</th>\n<th>Vietnamese</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Zero</td>\n<td>Không</td>\n</tr>\n<tr>\n<td>One</td>\n<td>Một</td>\n</tr>\n<tr>\n<td>Two</td>\n<td>Hai</td>\n</tr>\n<tr>\n<td>Three</td>\n<td>Ba</td>\n</tr>\n<tr>\n<td>Four</td>\n<td>Bốn</td>\n</tr>\n<tr>\n<td>Five</td>\n<td>Năm</td>\n</tr>\n<tr>\n<td>Six</td>\n<td>Sáu</td>\n</tr>\n<tr>\n<td>Seven</td>\n<td>Bảy</td>\n</tr>\n<tr>\n<td>Eight</td>\n<td>Tám</td>\n</tr>\n<tr>\n<td>Nine</td>\n<td>Chín</td>\n</tr>\n<tr>\n<td>Ten</td>\n<td>Mười</td>\n</tr>\n</tbody>\n</table>\n<h3>From 11-19</h3>\n<p>From 11-19, you say <strong><em>mười</em></strong> (ten) + <strong><em>any number from one to nine</em></strong> from table above. Literally, it means “ten one” (11), “ten two” (12) and so on.</p>\n<ul>\n<li><strong>Exception</strong>: For fifteen (15), you cannot say “mười năm” (ten five) but the correct form is <strong><em>Mười lăm</em></strong> (“lăm” instead of “năm”). Though <strong>lăm</strong> and <strong>năm</strong> all mean “five”, <strong>năm</strong> is used for number 5 only while <strong>lăm</strong> is used with any integer starting from 15 that ends with 5 (15, 25, 35, 45…). Using <strong>lăm</strong> alone to represent number 5 is incorrect!</li>\n</ul>\n<h3>From 20 to 99</h3>\n<ol>\n<li>For 20, 30, 40, 50, 60, 70, 80, 90, you say <strong><em>any number from two to nine</em></strong> (table above) + <strong><em>mươi</em></strong>. Example: hai mươi (20), ba mươi (30), chín mươi (90) and so on.<ul>\n<li>Note that this is <strong><em>mươi</em></strong>, not <strong><em>mười</em></strong>. </li>\n</ul>\n</li>\n<li>\n<p>For the rest of the number, you simply combine <strong><em>any number from two to nine</em></strong> (table above) + <strong><em>mươi</em></strong> + <strong><em>any number from two to nine</em></strong>. Example: hai mươi ba (23, literally two ten three), chín mươi chín (99, literally nine ten nine). </p>\n<ul>\n<li><strong>Exception</strong>: Pay attention to the use of <strong>lăm</strong> as mentioned above.<br />\n</li>\n<li><strong>Exception</strong>: For number ending with 1 (21, 31, 41…), you use <strong>mốt</strong> instead of <strong>một</strong>. This is similar to the case of <strong>lăm</strong> above. It starts from 21 and beyond (E.g: 61 is <em>sáu mươi mốt</em>, NOT <em>sáu mươi một</em>). For 11, you still use <strong>một</strong> as in <strong><em>mười một</em></strong> (11).</li>\n<li><strong>Exception</strong>: For number ending with 4 (24, 34, 44…), you can use <strong>tư</strong> beside <strong>bốn</strong>. <em>However</em>, unlike the case of <strong>lăm</strong> and <strong>mốt</strong> above, <strong>bốn</strong> and <strong>tư</strong> can be used interchangeably. (E.g: 44 can be <em>bốn mươi bốn</em> or <em>bốn mươi tư</em>; 74 can be <em>bảy mươi bốn</em> or <em>bảy mươi tư</em>)</li>\n</ul>\n</li>\n</ol>\n<h3>From 100 and beyond</h3>\n<ol>\n<li>For hundred-level, you use <strong><em>any number from one to nine</em></strong> + <strong><em>trăm</em></strong>. (Example: một trăm (100), chín trăm (900) and so on.)</li>\n<li>Simply combine #1 with two sessions above to form any number from 100 to 999. Example: hai trăm ba mươi ba (233), chín trăm chín mươi chín (999)…</li>\n<li><strong>Important</strong>: For any number from 1 to 9 (101 to 109, 201 to 209...), <strong><em>lẻ</em></strong> must be used. Formula: <strong><em>number (1-9)</em></strong> + <strong><em>trăm</em></strong> + <strong><em>lẻ</em></strong> + <strong><em>number (1-9)</em></strong> </li>\n<li>For thousand-level, you use <strong><em>any number from one to nine</em></strong> + <strong><em>nghìn</em></strong>. Repeat #2 and #3 for any number from 1000 to 9999. </li>\n<li>For million-level, you use <strong><em>any number from one to nine</em></strong> + <strong><em>triệu</em></strong>. Same as above. </li>\n<li>For billion-level, you use <strong><em>any number from one to nine</em></strong> + <strong><em>tỷ</em></strong>. Same as above. </li>\n</ol>\n<h3>Vietnamese currency</h3>\n<p>Vietnamese currency (Vietnam dong - <em>Việt Nam đồng</em> or just simply <em>đồng</em>) starts with thousand-level so if you plan to travel, I recommend you to pay attention to the word <strong><em>nghìn</em></strong> (thousand) and <strong><em>triệu</em></strong> (million). </p>\n<ul>\n<li>You do not have to say “Việt Nam đồng” as currency unit when talking about money in Vietnam.</li>\n<li>Available bills: 1000, 2000, 5000, 10000, 20000, 50000, 100000, 200000, 500000 (paper bill only, there used to be coins but they are extremely rare now).</li>\n</ul>",
+          "num_lexemes": 23,
+          "num_missing": 23,
           "comment_data": {},
           "dependencies": [
-            "People",
-            "Abstract Objects 1",
-            "Verbs 4"
+            "Adjectives 1",
+            "Colors",
+            "Conjunctions"
           ],
           "known_lexemes": [],
           "progress_v3": {
             "level": 0
           },
           "words": [
-            "thông tin",
-            "bình luận",
-            "mạng lưới",
-            "báo chí",
-            "truyền thông",
-            "diễn đàn",
-            "thời sự",
-            "tin nhắn",
-            "internet",
-            "mật khẩu"
+            "hai",
+            "ba",
+            "bốn",
+            "năm",
+            "sáu",
+            "bảy",
+            "nhiều",
+            "tám",
+            "chín",
+            "mười"
           ],
-          "num_sessions_for_level": 3,
+          "num_sessions_for_level": 4,
           "path": [],
           "num_levels": 5,
           "progress_v3_debug_info": {
@@ -5433,61 +5433,71 @@
             },
             "original_debug_info": {
               "level_progress": {
-                "4d578bca00aaa1f7536f2e9f13f84c53": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "e45bc5dc9ba73734cccc4c57f1d53e8d": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "03c8dfc35b243946322a4202a0402ee9": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "984f6e391ea19de79e4cca86bd2edd97": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "aceaf3ebe52a89e2db0b14e58eb0d121": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "99a5b736c083fc3aee426245d281d349": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "0f0fb30f64b0ab3fc764e1c65daaa708": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "86c77d307b53bb1903d745e0263c2af6": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "a3cdebc7b62e4c74200dc6b44c493f2b": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "e0718ab947f70f5e374149bb3b31ac91": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "595de339291b96464a25be965659eafa": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "330b8fd3e3c7042496a32cec861ac8a3": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "cc72e477eb77c93874f1470c4c3ebeeb": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "727d4d2e711e5c900a2d089e15f6c194": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "65c831e47d1c8c649553881b817139f5": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "960734c2f46218d3b193ff286e3d2480": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "d72aa449fc35dec71d3b5014a690b585": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "043e7b051ed3a5becadb2ab73c684fc7": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "8a3bce3ae539df87f3a5f26a80bbb202": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))"
+                "bf09d778e72d85eaec5b3ac23fd416f9": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "d4ddd3db536b1b5215297b67f97bb14e": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "856cb0f71a6fc1e9ddd7a510fb2c6e12": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "23e0a1297d900c3c2aec4eda9c36c407": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "71ca22d5cb016f454998ec514e16b7b6": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "7f7ab6019112d10d24a5427127134925": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "2ca8fe18d03dfc52ae45b70a34536633": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "545b662571acf4b3608a1b84077cbb7d": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "a654f8f752e2ab580bade9b9fc1b8f3e": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "b4564bedc3782762055a4693ddc91e7c": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "b17d035f43d95c52a1e9bd20e5e02f87": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "bcf718ba66e06fe3448e11992d390c65": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "2c3b67e428dce396088a0109a4b23c89": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "ebd0e6bb66f7b6a131cf03c6211beb56": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "3c1f7d3fca18e22344437955bce6f174": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "081ab5e26d54f0a54b2b7c650927f9a7": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "e7a51093531625745a65be775d7089bf": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "0df0190fd165709fa7bc1d47bce611a5": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "1df1c5e460b60706ef81600ec5baa1cd": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "2e173faf82ae0eb9d5ee23de6227f6eb": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "14d8a20373aad6d8295494ed1ba16a16": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "ea4813aa0923299680421ff704bc96ea": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "2dc63fd192fbcea56c69f0ddfc7b1ed4": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))"
               },
               "lexeme_ids_by_lesson": {
                 "0": [
-                  "043e7b051ed3a5becadb2ab73c684fc7",
-                  "4d578bca00aaa1f7536f2e9f13f84c53",
-                  "960734c2f46218d3b193ff286e3d2480",
-                  "65c831e47d1c8c649553881b817139f5",
-                  "aceaf3ebe52a89e2db0b14e58eb0d121",
-                  "99a5b736c083fc3aee426245d281d349"
+                  "bcf718ba66e06fe3448e11992d390c65",
+                  "23e0a1297d900c3c2aec4eda9c36c407",
+                  "ea4813aa0923299680421ff704bc96ea",
+                  "71ca22d5cb016f454998ec514e16b7b6",
+                  "856cb0f71a6fc1e9ddd7a510fb2c6e12",
+                  "d4ddd3db536b1b5215297b67f97bb14e"
                 ],
                 "1": [
-                  "0f0fb30f64b0ab3fc764e1c65daaa708",
-                  "03c8dfc35b243946322a4202a0402ee9",
-                  "cc72e477eb77c93874f1470c4c3ebeeb",
-                  "727d4d2e711e5c900a2d089e15f6c194",
-                  "330b8fd3e3c7042496a32cec861ac8a3",
-                  "a3cdebc7b62e4c74200dc6b44c493f2b",
-                  "e0718ab947f70f5e374149bb3b31ac91"
+                  "545b662571acf4b3608a1b84077cbb7d",
+                  "14d8a20373aad6d8295494ed1ba16a16",
+                  "2c3b67e428dce396088a0109a4b23c89",
+                  "2ca8fe18d03dfc52ae45b70a34536633",
+                  "1df1c5e460b60706ef81600ec5baa1cd",
+                  "3c1f7d3fca18e22344437955bce6f174",
+                  "e7a51093531625745a65be775d7089bf"
                 ],
                 "2": [
-                  "e45bc5dc9ba73734cccc4c57f1d53e8d",
-                  "d72aa449fc35dec71d3b5014a690b585",
-                  "984f6e391ea19de79e4cca86bd2edd97",
-                  "86c77d307b53bb1903d745e0263c2af6",
-                  "8a3bce3ae539df87f3a5f26a80bbb202",
-                  "595de339291b96464a25be965659eafa"
+                  "7f7ab6019112d10d24a5427127134925",
+                  "2e173faf82ae0eb9d5ee23de6227f6eb",
+                  "0df0190fd165709fa7bc1d47bce611a5",
+                  "b17d035f43d95c52a1e9bd20e5e02f87",
+                  "081ab5e26d54f0a54b2b7c650927f9a7",
+                  "2dc63fd192fbcea56c69f0ddfc7b1ed4"
+                ],
+                "3": [
+                  "ebd0e6bb66f7b6a131cf03c6211beb56",
+                  "a654f8f752e2ab580bade9b9fc1b8f3e",
+                  "bf09d778e72d85eaec5b3ac23fd416f9",
+                  "b4564bedc3782762055a4693ddc91e7c"
                 ]
               }
             }
           },
-          "short": "Comm.",
+          "short": "Numbers",
           "locked": true,
-          "name": "Communication",
+          "name": "Numbers",
           "language": "vi",
           "progress_v3_level_session_index": 0,
-          "new_index": 30,
+          "new_index": 22,
           "progress_percent": 0,
           "mastered": false
         },
@@ -6615,25 +6625,26 @@
         {
           "language_string": "Vietnamese",
           "dependencies_name": [
-            "Alphabet 2"
+            "Common Phrases",
+            "Negation"
           ],
           "practice_recommended": false,
           "disabled": false,
           "test_count": 3,
-          "missing_lessons": 4,
+          "missing_lessons": 2,
           "lesson": false,
           "has_explanation": true,
-          "url_title": "Basics-2",
+          "url_title": "Classifiers-1",
           "icon_color": "red",
           "category": "",
-          "num_lessons": 4,
+          "num_lessons": 2,
           "strength": 0,
           "beginner": false,
-          "title": "Basics 2",
+          "title": "Classifiers 1",
           "level_sessions_finished": 0,
-          "coords_y": 4,
-          "coords_x": 2,
-          "id": "e13ccb7900e3cb7a7a68d6042ddae912",
+          "coords_y": 6,
+          "coords_x": 1,
+          "id": "63d7222b28fa8ff08f632758ce688179",
           "levels_finished": 0,
           "test": true,
           "lesson_number": 1,
@@ -6643,30 +6654,28 @@
           "description": "",
           "index": 0,
           "bonus": false,
-          "explanation": "<p>No new content in this lesson. You may want to refer to previous grammar notes if you need help. Remember that we use simplified pronouns in this course, which are: </p>\n<table>\n<thead>\n<tr>\n<th align=\"center\">English Pronoun</th>\n<th align=\"center\">Vietnamese Pronoun</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">I</td>\n<td align=\"center\">Tôi</td>\n</tr>\n<tr>\n<td align=\"center\">You (singular)</td>\n<td align=\"center\">Bạn</td>\n</tr>\n<tr>\n<td align=\"center\">He</td>\n<td align=\"center\">Anh ấy</td>\n</tr>\n<tr>\n<td align=\"center\">She</td>\n<td align=\"center\">Cô ấy</td>\n</tr>\n<tr>\n<td align=\"center\">It</td>\n<td align=\"center\">Nó</td>\n</tr>\n<tr>\n<td align=\"center\">We</td>\n<td align=\"center\">Chúng tôi</td>\n</tr>\n<tr>\n<td align=\"center\">You (plural)</td>\n<td align=\"center\">Các bạn</td>\n</tr>\n<tr>\n<td align=\"center\">They</td>\n<td align=\"center\">Họ</td>\n</tr>\n</tbody>\n</table>\n<p>All other pronouns, despite being correct in certain context, will be marked wrong. </p>\n<p><em>Cultural note</em>: Inappropriate uses of pronouns in Vietnamese can mean anything from impoliteness, rudeness, awkwardness or intentional insult. Even the same two persons may use different pronouns over time depending on how their emotion, gender, social role, relationship or situation changes (falling in love, hating, threatening, anger, happiness, joking, honoring…). However, Vietnamese people are tolerant towards foreigners speaking Vietnamese so if you happen to use inappropriate pronouns, you are very likely to be excused!</p>",
-          "num_lexemes": 21,
-          "num_missing": 21,
+          "explanation": "<h3>Introduction to Classifier System in Vietnamese</h3>\n<p>Classifiers are used to accompany a noun but not to modify it. It precedes a noun in order to demonstrate a physical/non-physical appearance or quantity of that noun. Classifier System is not featured in English but some other languages do have similar system. </p>\n<p>Word order of a noun is: <strong>classifier + noun + adjective</strong>. </p>\n<p>Just like noun gender in some languages, this is something one has to learn by heart. It is important to know which classifier goes with which noun. There can be more than one classifier that can match with a noun but not all nouns will have two or more classifiers.</p>\n<p>In this skill, you will start with 7 classifiers:</p>\n<ul>\n<li><strong>Cái</strong> and <strong>chiếc</strong> are the most common classifiers. Unless the object has specific or unique features that require other classifiers, most of them (70% of all nouns) can be accompanied by <strong>cái</strong> or <strong>chiếc</strong> interchangeably. </li>\n<li><strong>Quyển</strong> and <strong>cuốn</strong> accompany book or any noun that resembles a book (novel, comics, diary…). They can be used interchangeably.</li>\n<li><strong>Quả</strong> and <strong>trái</strong> accompany fruit most of the time, but can be used for words that resemble a small, spherical or near spherical object (soccer ball, shuttlecock, any sport ball, and even grenade and bomb). </li>\n<li><strong>Tờ</strong> accompanies a piece of paper or anything that resembles a piece of paper (form, receipt, money…)</li>\n</ul>",
+          "num_lexemes": 7,
+          "num_missing": 7,
           "comment_data": {},
           "dependencies": [
-            "Alphabet Introduction 2"
+            "Common Phrases",
+            "Negation"
           ],
           "known_lexemes": [],
           "progress_v3": {
             "level": 0
           },
           "words": [
-            "báo",
-            "đọc",
-            "thực đơn",
-            "chúng tôi",
-            "bánh",
-            "tập",
-            "họ",
-            "sách",
-            "đĩa",
-            "tạp chí"
+            "cái",
+            "quyển",
+            "cuốn",
+            "quả",
+            "trái",
+            "chiếc",
+            "tờ"
           ],
-          "num_sessions_for_level": 4,
+          "num_sessions_for_level": 2,
           "path": [],
           "num_levels": 5,
           "progress_v3_debug_info": {
@@ -6676,67 +6685,35 @@
             },
             "original_debug_info": {
               "level_progress": {
-                "0ae2a509d744b66e2496e5a7e5091b23": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "39cf8a7c6367e414ceacb502b115c46e": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "734e83a1833711e2a6f13fe461b310c9": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "1550aa2dc43942307dc5f87c69b0d0a8": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "64c64d4ad4d2a81a85ecd57584a74a22": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "3b35761c1f8af3c1af7604a44243e119": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "6e294c8a20a7caf3aa55bee6337d3fd3": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "d9b8844fa33c30f93e5e020599add3ce": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "3e004f3e3f4571db058611bc013eb1b5": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "ad2d289ef04fef3d01dff5f4f44ec06e": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "38ffcffc062342275bfd1c281c71942b": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "024e85d36730154eef4dcd64f07dbe9c": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "48178616a862d04154f64daa506ac031": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "1bda867ef576b1de89ac8908b92e837a": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "0a3c0598dc08ebcab49da485f7a41f8b": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "31615ba4dccc0822d55619519cb5be21": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "752c1800567285967a5d77e8626f6ca4": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "41f5a00bc5ca85c6e8dfc7fdf285b20a": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "71fc734f97d01c44acab482570d0893e": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "101366616b86a40ef235b50c281f57a7": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "edf2892b079203520c64682117f7cdab": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))"
+                "be90a8ed3499012582e147e0ba0590c3": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "297661499e23ee06710daa3d3148e106": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "c440a92e794e1fb29913d4d6b9c2ed79": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "4345f73d0b1a6c1d543032745911049f": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "4729f35cdc9347d4c8e12880b67f9ad3": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "8e912e9ac7f262169d1081d5d048548a": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "0c748c0fe1ec8d3bb7a15bb21dd596d1": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))"
               },
               "lexeme_ids_by_lesson": {
                 "0": [
-                  "101366616b86a40ef235b50c281f57a7",
-                  "0ae2a509d744b66e2496e5a7e5091b23",
-                  "734e83a1833711e2a6f13fe461b310c9",
-                  "71fc734f97d01c44acab482570d0893e",
-                  "1550aa2dc43942307dc5f87c69b0d0a8",
-                  "0a3c0598dc08ebcab49da485f7a41f8b"
+                  "0c748c0fe1ec8d3bb7a15bb21dd596d1",
+                  "c440a92e794e1fb29913d4d6b9c2ed79",
+                  "297661499e23ee06710daa3d3148e106",
+                  "4729f35cdc9347d4c8e12880b67f9ad3"
                 ],
                 "1": [
-                  "3e004f3e3f4571db058611bc013eb1b5",
-                  "3b35761c1f8af3c1af7604a44243e119",
-                  "41f5a00bc5ca85c6e8dfc7fdf285b20a",
-                  "48178616a862d04154f64daa506ac031",
-                  "6e294c8a20a7caf3aa55bee6337d3fd3"
-                ],
-                "2": [
-                  "ad2d289ef04fef3d01dff5f4f44ec06e",
-                  "39cf8a7c6367e414ceacb502b115c46e",
-                  "1bda867ef576b1de89ac8908b92e837a",
-                  "31615ba4dccc0822d55619519cb5be21",
-                  "024e85d36730154eef4dcd64f07dbe9c"
-                ],
-                "3": [
-                  "edf2892b079203520c64682117f7cdab",
-                  "64c64d4ad4d2a81a85ecd57584a74a22",
-                  "752c1800567285967a5d77e8626f6ca4",
-                  "d9b8844fa33c30f93e5e020599add3ce",
-                  "38ffcffc062342275bfd1c281c71942b"
+                  "8e912e9ac7f262169d1081d5d048548a",
+                  "be90a8ed3499012582e147e0ba0590c3",
+                  "4345f73d0b1a6c1d543032745911049f"
                 ]
               }
             }
           },
-          "short": "Basics 2",
+          "short": "Classif. 1",
           "locked": true,
-          "name": "Basics 2",
+          "name": "Classifier 1",
           "language": "vi",
           "progress_v3_level_session_index": 0,
-          "new_index": 2,
+          "new_index": 45,
           "progress_percent": 0,
           "mastered": false
         },
@@ -7059,26 +7036,25 @@
         {
           "language_string": "Vietnamese",
           "dependencies_name": [
-            "Miscellaneous",
-            "Adjectives 2"
+            "Alphabet 2"
           ],
           "practice_recommended": false,
           "disabled": false,
           "test_count": 3,
-          "missing_lessons": 3,
+          "missing_lessons": 4,
           "lesson": false,
-          "has_explanation": "",
-          "url_title": "Sports",
-          "icon_color": "green",
+          "has_explanation": true,
+          "url_title": "Basics-2",
+          "icon_color": "red",
           "category": "",
-          "num_lessons": 3,
+          "num_lessons": 4,
           "strength": 0,
           "beginner": false,
-          "title": "Sports",
+          "title": "Basics 2",
           "level_sessions_finished": 0,
-          "coords_y": 29,
+          "coords_y": 4,
           "coords_x": 2,
-          "id": "ab49900e6d7ef2cf745848c2ade65810",
+          "id": "e13ccb7900e3cb7a7a68d6042ddae912",
           "levels_finished": 0,
           "test": true,
           "lesson_number": 1,
@@ -7088,31 +7064,30 @@
           "description": "",
           "index": 0,
           "bonus": false,
-          "explanation": null,
-          "num_lexemes": 18,
-          "num_missing": 18,
+          "explanation": "<p>No new content in this lesson. You may want to refer to previous grammar notes if you need help. Remember that we use simplified pronouns in this course, which are: </p>\n<table>\n<thead>\n<tr>\n<th align=\"center\">English Pronoun</th>\n<th align=\"center\">Vietnamese Pronoun</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">I</td>\n<td align=\"center\">Tôi</td>\n</tr>\n<tr>\n<td align=\"center\">You (singular)</td>\n<td align=\"center\">Bạn</td>\n</tr>\n<tr>\n<td align=\"center\">He</td>\n<td align=\"center\">Anh ấy</td>\n</tr>\n<tr>\n<td align=\"center\">She</td>\n<td align=\"center\">Cô ấy</td>\n</tr>\n<tr>\n<td align=\"center\">It</td>\n<td align=\"center\">Nó</td>\n</tr>\n<tr>\n<td align=\"center\">We</td>\n<td align=\"center\">Chúng tôi</td>\n</tr>\n<tr>\n<td align=\"center\">You (plural)</td>\n<td align=\"center\">Các bạn</td>\n</tr>\n<tr>\n<td align=\"center\">They</td>\n<td align=\"center\">Họ</td>\n</tr>\n</tbody>\n</table>\n<p>All other pronouns, despite being correct in certain context, will be marked wrong. </p>\n<p><em>Cultural note</em>: Inappropriate uses of pronouns in Vietnamese can mean anything from impoliteness, rudeness, awkwardness or intentional insult. Even the same two persons may use different pronouns over time depending on how their emotion, gender, social role, relationship or situation changes (falling in love, hating, threatening, anger, happiness, joking, honoring…). However, Vietnamese people are tolerant towards foreigners speaking Vietnamese so if you happen to use inappropriate pronouns, you are very likely to be excused!</p>",
+          "num_lexemes": 21,
+          "num_missing": 21,
           "comment_data": {},
           "dependencies": [
-            "Miscellaneous",
-            "Adjectives 2"
+            "Alphabet Introduction 2"
           ],
           "known_lexemes": [],
           "progress_v3": {
             "level": 0
           },
           "words": [
-            "bóng",
-            "thể thao",
-            "đội",
-            "bàn thắng",
-            "cầu thủ",
-            "trọng tài",
-            "bóng chuyền",
-            "bóng rổ",
-            "trận đấu",
-            "bóng bầu dục"
+            "báo",
+            "đọc",
+            "thực đơn",
+            "chúng tôi",
+            "bánh",
+            "tập",
+            "họ",
+            "sách",
+            "đĩa",
+            "tạp chí"
           ],
-          "num_sessions_for_level": 3,
+          "num_sessions_for_level": 4,
           "path": [],
           "num_levels": 5,
           "progress_v3_debug_info": {
@@ -7122,59 +7097,67 @@
             },
             "original_debug_info": {
               "level_progress": {
-                "ff80a63638b2097dc27a6e6f424a4a6c": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "1c4ec1df85ca05812b14b46d1b91117e": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "b361dcd2ff4b2ab7bb3ef626617b08ea": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "abe6d42c2b5a30fcb6b42a7a1a87d07c": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "40523c594ae1741c7d003cb5274a39cb": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "8b10766b7f32ad822773a0f0ed8b2413": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "328625b0071333375d3f4cb0f596fb36": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "353b84fa6654c6b2196ccd52e5a5de29": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "9c50b20f08f4cf6926207fb7be7013a9": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "06b0c47baf1db689ec938d6cb7b9d2bc": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "d04a75a9c4fcc20a89d25518dc43d20d": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "922eef2b4a6438fc97a5f1557dc9421b": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "fdcab0cb9a7aa59f01b3fff99fd73988": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "b83a190030ec5e2c29fd48012efb2fc8": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "05748480b98fc9da362c82cec27d161d": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "a745ab4390d0afc5f149bd2c0aa9c74d": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "3155c15b2b6ef42ec89d80f71eeba7c0": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "c6c164e5a4ca3ada1f2aa94500e44b36": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))"
+                "0ae2a509d744b66e2496e5a7e5091b23": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "39cf8a7c6367e414ceacb502b115c46e": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "734e83a1833711e2a6f13fe461b310c9": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "1550aa2dc43942307dc5f87c69b0d0a8": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "64c64d4ad4d2a81a85ecd57584a74a22": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "3b35761c1f8af3c1af7604a44243e119": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "6e294c8a20a7caf3aa55bee6337d3fd3": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "d9b8844fa33c30f93e5e020599add3ce": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "3e004f3e3f4571db058611bc013eb1b5": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "ad2d289ef04fef3d01dff5f4f44ec06e": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "38ffcffc062342275bfd1c281c71942b": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "024e85d36730154eef4dcd64f07dbe9c": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "48178616a862d04154f64daa506ac031": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "1bda867ef576b1de89ac8908b92e837a": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "0a3c0598dc08ebcab49da485f7a41f8b": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "31615ba4dccc0822d55619519cb5be21": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "752c1800567285967a5d77e8626f6ca4": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "41f5a00bc5ca85c6e8dfc7fdf285b20a": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "71fc734f97d01c44acab482570d0893e": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "101366616b86a40ef235b50c281f57a7": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "edf2892b079203520c64682117f7cdab": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))"
               },
               "lexeme_ids_by_lesson": {
                 "0": [
-                  "d04a75a9c4fcc20a89d25518dc43d20d",
-                  "fdcab0cb9a7aa59f01b3fff99fd73988",
-                  "9c50b20f08f4cf6926207fb7be7013a9",
-                  "b83a190030ec5e2c29fd48012efb2fc8",
-                  "1c4ec1df85ca05812b14b46d1b91117e",
-                  "922eef2b4a6438fc97a5f1557dc9421b"
+                  "101366616b86a40ef235b50c281f57a7",
+                  "0ae2a509d744b66e2496e5a7e5091b23",
+                  "734e83a1833711e2a6f13fe461b310c9",
+                  "71fc734f97d01c44acab482570d0893e",
+                  "1550aa2dc43942307dc5f87c69b0d0a8",
+                  "0a3c0598dc08ebcab49da485f7a41f8b"
                 ],
                 "1": [
-                  "8b10766b7f32ad822773a0f0ed8b2413",
-                  "05748480b98fc9da362c82cec27d161d",
-                  "06b0c47baf1db689ec938d6cb7b9d2bc",
-                  "3155c15b2b6ef42ec89d80f71eeba7c0",
-                  "abe6d42c2b5a30fcb6b42a7a1a87d07c",
-                  "40523c594ae1741c7d003cb5274a39cb"
+                  "3e004f3e3f4571db058611bc013eb1b5",
+                  "3b35761c1f8af3c1af7604a44243e119",
+                  "41f5a00bc5ca85c6e8dfc7fdf285b20a",
+                  "48178616a862d04154f64daa506ac031",
+                  "6e294c8a20a7caf3aa55bee6337d3fd3"
                 ],
                 "2": [
-                  "b361dcd2ff4b2ab7bb3ef626617b08ea",
-                  "328625b0071333375d3f4cb0f596fb36",
-                  "353b84fa6654c6b2196ccd52e5a5de29",
-                  "c6c164e5a4ca3ada1f2aa94500e44b36",
-                  "a745ab4390d0afc5f149bd2c0aa9c74d",
-                  "ff80a63638b2097dc27a6e6f424a4a6c"
+                  "ad2d289ef04fef3d01dff5f4f44ec06e",
+                  "39cf8a7c6367e414ceacb502b115c46e",
+                  "1bda867ef576b1de89ac8908b92e837a",
+                  "31615ba4dccc0822d55619519cb5be21",
+                  "024e85d36730154eef4dcd64f07dbe9c"
+                ],
+                "3": [
+                  "edf2892b079203520c64682117f7cdab",
+                  "64c64d4ad4d2a81a85ecd57584a74a22",
+                  "752c1800567285967a5d77e8626f6ca4",
+                  "d9b8844fa33c30f93e5e020599add3ce",
+                  "38ffcffc062342275bfd1c281c71942b"
                 ]
               }
             }
           },
-          "short": "Sports",
+          "short": "Basics 2",
           "locked": true,
-          "name": "Sports",
+          "name": "Basics 2",
           "language": "vi",
           "progress_v3_level_session_index": 0,
-          "new_index": 9,
+          "new_index": 2,
           "progress_percent": 0,
           "mastered": false
         },
@@ -7930,27 +7913,26 @@
         {
           "language_string": "Vietnamese",
           "dependencies_name": [
-            "Adjectives 1",
-            "Colors",
-            "Conjunctions"
+            "Miscellaneous",
+            "Adjectives 2"
           ],
           "practice_recommended": false,
           "disabled": false,
           "test_count": 3,
-          "missing_lessons": 4,
+          "missing_lessons": 3,
           "lesson": false,
-          "has_explanation": true,
-          "url_title": "Numbers",
-          "icon_color": "blue",
+          "has_explanation": "",
+          "url_title": "Sports",
+          "icon_color": "green",
           "category": "",
-          "num_lessons": 4,
+          "num_lessons": 3,
           "strength": 0,
           "beginner": false,
-          "title": "Numbers",
+          "title": "Sports",
           "level_sessions_finished": 0,
-          "coords_y": 11,
-          "coords_x": 0,
-          "id": "92f83402a6e76cc5d9a19556766b103a",
+          "coords_y": 29,
+          "coords_x": 2,
+          "id": "ab49900e6d7ef2cf745848c2ade65810",
           "levels_finished": 0,
           "test": true,
           "lesson_number": 1,
@@ -7960,32 +7942,31 @@
           "description": "",
           "index": 0,
           "bonus": false,
-          "explanation": "<h3>From 0 to 10</h3>\n<p>Firstly, here are numbers from 0-10:</p>\n<table>\n<thead>\n<tr>\n<th>English</th>\n<th>Vietnamese</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Zero</td>\n<td>Không</td>\n</tr>\n<tr>\n<td>One</td>\n<td>Một</td>\n</tr>\n<tr>\n<td>Two</td>\n<td>Hai</td>\n</tr>\n<tr>\n<td>Three</td>\n<td>Ba</td>\n</tr>\n<tr>\n<td>Four</td>\n<td>Bốn</td>\n</tr>\n<tr>\n<td>Five</td>\n<td>Năm</td>\n</tr>\n<tr>\n<td>Six</td>\n<td>Sáu</td>\n</tr>\n<tr>\n<td>Seven</td>\n<td>Bảy</td>\n</tr>\n<tr>\n<td>Eight</td>\n<td>Tám</td>\n</tr>\n<tr>\n<td>Nine</td>\n<td>Chín</td>\n</tr>\n<tr>\n<td>Ten</td>\n<td>Mười</td>\n</tr>\n</tbody>\n</table>\n<h3>From 11-19</h3>\n<p>From 11-19, you say <strong><em>mười</em></strong> (ten) + <strong><em>any number from one to nine</em></strong> from table above. Literally, it means “ten one” (11), “ten two” (12) and so on.</p>\n<ul>\n<li><strong>Exception</strong>: For fifteen (15), you cannot say “mười năm” (ten five) but the correct form is <strong><em>Mười lăm</em></strong> (“lăm” instead of “năm”). Though <strong>lăm</strong> and <strong>năm</strong> all mean “five”, <strong>năm</strong> is used for number 5 only while <strong>lăm</strong> is used with any integer starting from 15 that ends with 5 (15, 25, 35, 45…). Using <strong>lăm</strong> alone to represent number 5 is incorrect!</li>\n</ul>\n<h3>From 20 to 99</h3>\n<ol>\n<li>For 20, 30, 40, 50, 60, 70, 80, 90, you say <strong><em>any number from two to nine</em></strong> (table above) + <strong><em>mươi</em></strong>. Example: hai mươi (20), ba mươi (30), chín mươi (90) and so on.<ul>\n<li>Note that this is <strong><em>mươi</em></strong>, not <strong><em>mười</em></strong>. </li>\n</ul>\n</li>\n<li>\n<p>For the rest of the number, you simply combine <strong><em>any number from two to nine</em></strong> (table above) + <strong><em>mươi</em></strong> + <strong><em>any number from two to nine</em></strong>. Example: hai mươi ba (23, literally two ten three), chín mươi chín (99, literally nine ten nine). </p>\n<ul>\n<li><strong>Exception</strong>: Pay attention to the use of <strong>lăm</strong> as mentioned above.<br />\n</li>\n<li><strong>Exception</strong>: For number ending with 1 (21, 31, 41…), you use <strong>mốt</strong> instead of <strong>một</strong>. This is similar to the case of <strong>lăm</strong> above. It starts from 21 and beyond (E.g: 61 is <em>sáu mươi mốt</em>, NOT <em>sáu mươi một</em>). For 11, you still use <strong>một</strong> as in <strong><em>mười một</em></strong> (11).</li>\n<li><strong>Exception</strong>: For number ending with 4 (24, 34, 44…), you can use <strong>tư</strong> beside <strong>bốn</strong>. <em>However</em>, unlike the case of <strong>lăm</strong> and <strong>mốt</strong> above, <strong>bốn</strong> and <strong>tư</strong> can be used interchangeably. (E.g: 44 can be <em>bốn mươi bốn</em> or <em>bốn mươi tư</em>; 74 can be <em>bảy mươi bốn</em> or <em>bảy mươi tư</em>)</li>\n</ul>\n</li>\n</ol>\n<h3>From 100 and beyond</h3>\n<ol>\n<li>For hundred-level, you use <strong><em>any number from one to nine</em></strong> + <strong><em>trăm</em></strong>. (Example: một trăm (100), chín trăm (900) and so on.)</li>\n<li>Simply combine #1 with two sessions above to form any number from 100 to 999. Example: hai trăm ba mươi ba (233), chín trăm chín mươi chín (999)…</li>\n<li><strong>Important</strong>: For any number from 1 to 9 (101 to 109, 201 to 209...), <strong><em>lẻ</em></strong> must be used. Formula: <strong><em>number (1-9)</em></strong> + <strong><em>trăm</em></strong> + <strong><em>lẻ</em></strong> + <strong><em>number (1-9)</em></strong> </li>\n<li>For thousand-level, you use <strong><em>any number from one to nine</em></strong> + <strong><em>nghìn</em></strong>. Repeat #2 and #3 for any number from 1000 to 9999. </li>\n<li>For million-level, you use <strong><em>any number from one to nine</em></strong> + <strong><em>triệu</em></strong>. Same as above. </li>\n<li>For billion-level, you use <strong><em>any number from one to nine</em></strong> + <strong><em>tỷ</em></strong>. Same as above. </li>\n</ol>\n<h3>Vietnamese currency</h3>\n<p>Vietnamese currency (Vietnam dong - <em>Việt Nam đồng</em> or just simply <em>đồng</em>) starts with thousand-level so if you plan to travel, I recommend you to pay attention to the word <strong><em>nghìn</em></strong> (thousand) and <strong><em>triệu</em></strong> (million). </p>\n<ul>\n<li>You do not have to say “Việt Nam đồng” as currency unit when talking about money in Vietnam.</li>\n<li>Available bills: 1000, 2000, 5000, 10000, 20000, 50000, 100000, 200000, 500000 (paper bill only, there used to be coins but they are extremely rare now).</li>\n</ul>",
-          "num_lexemes": 23,
-          "num_missing": 23,
+          "explanation": null,
+          "num_lexemes": 18,
+          "num_missing": 18,
           "comment_data": {},
           "dependencies": [
-            "Adjectives 1",
-            "Colors",
-            "Conjunctions"
+            "Miscellaneous",
+            "Adjectives 2"
           ],
           "known_lexemes": [],
           "progress_v3": {
             "level": 0
           },
           "words": [
-            "hai",
-            "ba",
-            "bốn",
-            "năm",
-            "sáu",
-            "bảy",
-            "nhiều",
-            "tám",
-            "chín",
-            "mười"
+            "bóng",
+            "thể thao",
+            "đội",
+            "bàn thắng",
+            "cầu thủ",
+            "trọng tài",
+            "bóng chuyền",
+            "bóng rổ",
+            "trận đấu",
+            "bóng bầu dục"
           ],
-          "num_sessions_for_level": 4,
+          "num_sessions_for_level": 3,
           "path": [],
           "num_levels": 5,
           "progress_v3_debug_info": {
@@ -7995,71 +7976,59 @@
             },
             "original_debug_info": {
               "level_progress": {
-                "bf09d778e72d85eaec5b3ac23fd416f9": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "d4ddd3db536b1b5215297b67f97bb14e": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "856cb0f71a6fc1e9ddd7a510fb2c6e12": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "23e0a1297d900c3c2aec4eda9c36c407": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "71ca22d5cb016f454998ec514e16b7b6": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "7f7ab6019112d10d24a5427127134925": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "2ca8fe18d03dfc52ae45b70a34536633": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "545b662571acf4b3608a1b84077cbb7d": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "a654f8f752e2ab580bade9b9fc1b8f3e": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "b4564bedc3782762055a4693ddc91e7c": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "b17d035f43d95c52a1e9bd20e5e02f87": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "bcf718ba66e06fe3448e11992d390c65": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "2c3b67e428dce396088a0109a4b23c89": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "ebd0e6bb66f7b6a131cf03c6211beb56": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "3c1f7d3fca18e22344437955bce6f174": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "081ab5e26d54f0a54b2b7c650927f9a7": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "e7a51093531625745a65be775d7089bf": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "0df0190fd165709fa7bc1d47bce611a5": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "1df1c5e460b60706ef81600ec5baa1cd": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "2e173faf82ae0eb9d5ee23de6227f6eb": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "14d8a20373aad6d8295494ed1ba16a16": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "ea4813aa0923299680421ff704bc96ea": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "2dc63fd192fbcea56c69f0ddfc7b1ed4": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))"
+                "ff80a63638b2097dc27a6e6f424a4a6c": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "1c4ec1df85ca05812b14b46d1b91117e": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "b361dcd2ff4b2ab7bb3ef626617b08ea": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "abe6d42c2b5a30fcb6b42a7a1a87d07c": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "40523c594ae1741c7d003cb5274a39cb": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "8b10766b7f32ad822773a0f0ed8b2413": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "328625b0071333375d3f4cb0f596fb36": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "353b84fa6654c6b2196ccd52e5a5de29": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "9c50b20f08f4cf6926207fb7be7013a9": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "06b0c47baf1db689ec938d6cb7b9d2bc": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "d04a75a9c4fcc20a89d25518dc43d20d": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "922eef2b4a6438fc97a5f1557dc9421b": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "fdcab0cb9a7aa59f01b3fff99fd73988": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "b83a190030ec5e2c29fd48012efb2fc8": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "05748480b98fc9da362c82cec27d161d": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "a745ab4390d0afc5f149bd2c0aa9c74d": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "3155c15b2b6ef42ec89d80f71eeba7c0": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "c6c164e5a4ca3ada1f2aa94500e44b36": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))"
               },
               "lexeme_ids_by_lesson": {
                 "0": [
-                  "bcf718ba66e06fe3448e11992d390c65",
-                  "23e0a1297d900c3c2aec4eda9c36c407",
-                  "ea4813aa0923299680421ff704bc96ea",
-                  "71ca22d5cb016f454998ec514e16b7b6",
-                  "856cb0f71a6fc1e9ddd7a510fb2c6e12",
-                  "d4ddd3db536b1b5215297b67f97bb14e"
+                  "d04a75a9c4fcc20a89d25518dc43d20d",
+                  "fdcab0cb9a7aa59f01b3fff99fd73988",
+                  "9c50b20f08f4cf6926207fb7be7013a9",
+                  "b83a190030ec5e2c29fd48012efb2fc8",
+                  "1c4ec1df85ca05812b14b46d1b91117e",
+                  "922eef2b4a6438fc97a5f1557dc9421b"
                 ],
                 "1": [
-                  "545b662571acf4b3608a1b84077cbb7d",
-                  "14d8a20373aad6d8295494ed1ba16a16",
-                  "2c3b67e428dce396088a0109a4b23c89",
-                  "2ca8fe18d03dfc52ae45b70a34536633",
-                  "1df1c5e460b60706ef81600ec5baa1cd",
-                  "3c1f7d3fca18e22344437955bce6f174",
-                  "e7a51093531625745a65be775d7089bf"
+                  "8b10766b7f32ad822773a0f0ed8b2413",
+                  "05748480b98fc9da362c82cec27d161d",
+                  "06b0c47baf1db689ec938d6cb7b9d2bc",
+                  "3155c15b2b6ef42ec89d80f71eeba7c0",
+                  "abe6d42c2b5a30fcb6b42a7a1a87d07c",
+                  "40523c594ae1741c7d003cb5274a39cb"
                 ],
                 "2": [
-                  "7f7ab6019112d10d24a5427127134925",
-                  "2e173faf82ae0eb9d5ee23de6227f6eb",
-                  "0df0190fd165709fa7bc1d47bce611a5",
-                  "b17d035f43d95c52a1e9bd20e5e02f87",
-                  "081ab5e26d54f0a54b2b7c650927f9a7",
-                  "2dc63fd192fbcea56c69f0ddfc7b1ed4"
-                ],
-                "3": [
-                  "ebd0e6bb66f7b6a131cf03c6211beb56",
-                  "a654f8f752e2ab580bade9b9fc1b8f3e",
-                  "bf09d778e72d85eaec5b3ac23fd416f9",
-                  "b4564bedc3782762055a4693ddc91e7c"
+                  "b361dcd2ff4b2ab7bb3ef626617b08ea",
+                  "328625b0071333375d3f4cb0f596fb36",
+                  "353b84fa6654c6b2196ccd52e5a5de29",
+                  "c6c164e5a4ca3ada1f2aa94500e44b36",
+                  "a745ab4390d0afc5f149bd2c0aa9c74d",
+                  "ff80a63638b2097dc27a6e6f424a4a6c"
                 ]
               }
             }
           },
-          "short": "Numbers",
+          "short": "Sports",
           "locked": true,
-          "name": "Numbers",
+          "name": "Sports",
           "language": "vi",
           "progress_v3_level_session_index": 0,
-          "new_index": 22,
+          "new_index": 9,
           "progress_percent": 0,
           "mastered": false
         },
@@ -8629,8 +8598,7 @@
         {
           "language_string": "Vietnamese",
           "dependencies_name": [
-            "Common Phrases",
-            "Negation"
+            "Adjectives 1.5"
           ],
           "practice_recommended": false,
           "disabled": false,
@@ -8638,17 +8606,17 @@
           "missing_lessons": 2,
           "lesson": false,
           "has_explanation": true,
-          "url_title": "Classifiers-1",
-          "icon_color": "red",
+          "url_title": "Conjunctions-2",
+          "icon_color": "blue",
           "category": "",
           "num_lessons": 2,
           "strength": 0,
           "beginner": false,
-          "title": "Classifiers 1",
+          "title": "Conjunctions 2",
           "level_sessions_finished": 0,
-          "coords_y": 6,
-          "coords_x": 1,
-          "id": "63d7222b28fa8ff08f632758ce688179",
+          "coords_y": 19,
+          "coords_x": 3,
+          "id": "1bc4bc17c77401b235f4342cc3947790",
           "levels_finished": 0,
           "test": true,
           "lesson_number": 1,
@@ -8658,26 +8626,28 @@
           "description": "",
           "index": 0,
           "bonus": false,
-          "explanation": "<h3>Introduction to Classifier System in Vietnamese</h3>\n<p>Classifiers are used to accompany a noun but not to modify it. It precedes a noun in order to demonstrate a physical/non-physical appearance or quantity of that noun. Classifier System is not featured in English but some other languages do have similar system. </p>\n<p>Word order of a noun is: <strong>classifier + noun + adjective</strong>. </p>\n<p>Just like noun gender in some languages, this is something one has to learn by heart. It is important to know which classifier goes with which noun. There can be more than one classifier that can match with a noun but not all nouns will have two or more classifiers.</p>\n<p>In this skill, you will start with 7 classifiers:</p>\n<ul>\n<li><strong>Cái</strong> and <strong>chiếc</strong> are the most common classifiers. Unless the object has specific or unique features that require other classifiers, most of them (70% of all nouns) can be accompanied by <strong>cái</strong> or <strong>chiếc</strong> interchangeably. </li>\n<li><strong>Quyển</strong> and <strong>cuốn</strong> accompany book or any noun that resembles a book (novel, comics, diary…). They can be used interchangeably.</li>\n<li><strong>Quả</strong> and <strong>trái</strong> accompany fruit most of the time, but can be used for words that resemble a small, spherical or near spherical object (soccer ball, shuttlecock, any sport ball, and even grenade and bomb). </li>\n<li><strong>Tờ</strong> accompanies a piece of paper or anything that resembles a piece of paper (form, receipt, money…)</li>\n</ul>",
-          "num_lexemes": 7,
-          "num_missing": 7,
+          "explanation": "<h3>Lesson 1</h3>\n<p><strong><em>vậy mà</em></strong> is equivalent to “but” in English and it connects two opposing clauses in one sentence. <strong><em>vậy mà</em></strong> can be used interchangeably with <strong><em>nhưng</em></strong>.</p>\n<p><strong><em>như vậy</em></strong> is a bit unique. Despite having various English interpretation, I limit its translation into two only (as shown in hint): “like that” (as in “I am like that”, “I work like that”, etc) and “as a result” (placed at the beginning of the clause).</p>\n<h3>Lesson 2</h3>\n<p><strong><em>mặc dù</em></strong> and <strong><em>tuy nhiên</em></strong> are equivalent to “although” or  “though”. They can be used interchangeably. If your answer containing either one of these is marked wrong, please report to us. </p>\n<p><strong><em>cũng</em></strong> is a helpful word to demonstrate someone <em>also</em> does something. Following this formula: subject (tôi/anh ấy/An/người đàn ông…) + <strong><em>cũng</em></strong> + verb. \n- <strong><em>cũng vậy</em></strong> is another way to shorten similar clauses. Using this structure: subject (tôi/anh ấy/An/người đàn ông…) + <strong><em>cũng vậy</em></strong>, it can replace sentences in this format “so am I/so do I/me too/I do too”. \n- Note: standalone <strong><em>vậy</em></strong> has many uses but mostly, it is equivalent to sentence-initial “so”, as being used as a pause during conversation.</p>",
+          "num_lexemes": 12,
+          "num_missing": 12,
           "comment_data": {},
           "dependencies": [
-            "Common Phrases",
-            "Negation"
+            "Adjectives 1.5"
           ],
           "known_lexemes": [],
           "progress_v3": {
             "level": 0
           },
           "words": [
-            "cái",
-            "quyển",
-            "cuốn",
-            "quả",
-            "trái",
-            "chiếc",
-            "tờ"
+            "chỉ",
+            "một khi",
+            "vậy mà",
+            "như vậy",
+            "trừ khi",
+            "hơn nữa",
+            "mặc dù",
+            "tuy nhiên",
+            "vậy nên",
+            "cũng"
           ],
           "num_sessions_for_level": 2,
           "path": [],
@@ -8689,35 +8659,45 @@
             },
             "original_debug_info": {
               "level_progress": {
-                "be90a8ed3499012582e147e0ba0590c3": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "297661499e23ee06710daa3d3148e106": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "c440a92e794e1fb29913d4d6b9c2ed79": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "4345f73d0b1a6c1d543032745911049f": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "4729f35cdc9347d4c8e12880b67f9ad3": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "8e912e9ac7f262169d1081d5d048548a": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "0c748c0fe1ec8d3bb7a15bb21dd596d1": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))"
+                "28785e9751105501e65da6a0c0e76538": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "50a3f6aa69abe57fb08ce15be8492531": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "8ec501642f57e84c8cf63469cfb50f85": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "17fa18f7ac7097322f2812fece1c2fda": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "96870701c22ae0001175552b0941a6a4": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "842540ddcc5e63ad17dfff4b3fb96ebc": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "7a77fb1cd76c27b9846f694283857c2a": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "3ee442e80f1be1ff70a411e81a4ce68d": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "b43e2e9f22489e7d1b101a10ff9410b5": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "30223cb22625c5b51222f2c4fe17d493": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "950b8fd6c01798db4a0a7f42331fbe0a": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "3ff7db48c551104cf144d87f65abc9f5": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))"
               },
               "lexeme_ids_by_lesson": {
                 "0": [
-                  "0c748c0fe1ec8d3bb7a15bb21dd596d1",
-                  "c440a92e794e1fb29913d4d6b9c2ed79",
-                  "297661499e23ee06710daa3d3148e106",
-                  "4729f35cdc9347d4c8e12880b67f9ad3"
+                  "28785e9751105501e65da6a0c0e76538",
+                  "7a77fb1cd76c27b9846f694283857c2a",
+                  "b43e2e9f22489e7d1b101a10ff9410b5",
+                  "3ff7db48c551104cf144d87f65abc9f5",
+                  "17fa18f7ac7097322f2812fece1c2fda",
+                  "8ec501642f57e84c8cf63469cfb50f85"
                 ],
                 "1": [
-                  "8e912e9ac7f262169d1081d5d048548a",
-                  "be90a8ed3499012582e147e0ba0590c3",
-                  "4345f73d0b1a6c1d543032745911049f"
+                  "96870701c22ae0001175552b0941a6a4",
+                  "50a3f6aa69abe57fb08ce15be8492531",
+                  "3ee442e80f1be1ff70a411e81a4ce68d",
+                  "950b8fd6c01798db4a0a7f42331fbe0a",
+                  "842540ddcc5e63ad17dfff4b3fb96ebc",
+                  "30223cb22625c5b51222f2c4fe17d493"
                 ]
               }
             }
           },
-          "short": "Classif. 1",
+          "short": "Conj. 2",
           "locked": true,
-          "name": "Classifier 1",
+          "name": "Conjunctions 2",
           "language": "vi",
           "progress_v3_level_session_index": 0,
-          "new_index": 45,
+          "new_index": 20,
           "progress_percent": 0,
           "mastered": false
         },
@@ -9094,112 +9074,6 @@
           "language": "vi",
           "progress_v3_level_session_index": 0,
           "new_index": 19,
-          "progress_percent": 0,
-          "mastered": false
-        },
-        {
-          "language_string": "Vietnamese",
-          "dependencies_name": [
-            "Adjectives 1.5"
-          ],
-          "practice_recommended": false,
-          "disabled": false,
-          "test_count": 3,
-          "missing_lessons": 2,
-          "lesson": false,
-          "has_explanation": true,
-          "url_title": "Conjunctions-2",
-          "icon_color": "blue",
-          "category": "",
-          "num_lessons": 2,
-          "strength": 0,
-          "beginner": false,
-          "title": "Conjunctions 2",
-          "level_sessions_finished": 0,
-          "coords_y": 19,
-          "coords_x": 3,
-          "id": "1bc4bc17c77401b235f4342cc3947790",
-          "levels_finished": 0,
-          "test": true,
-          "lesson_number": 1,
-          "learned": false,
-          "num_translation_nodes": 0,
-          "achievements": [],
-          "description": "",
-          "index": 0,
-          "bonus": false,
-          "explanation": "<h3>Lesson 1</h3>\n<p><strong><em>vậy mà</em></strong> is equivalent to “but” in English and it connects two opposing clauses in one sentence. <strong><em>vậy mà</em></strong> can be used interchangeably with <strong><em>nhưng</em></strong>.</p>\n<p><strong><em>như vậy</em></strong> is a bit unique. Despite having various English interpretation, I limit its translation into two only (as shown in hint): “like that” (as in “I am like that”, “I work like that”, etc) and “as a result” (placed at the beginning of the clause).</p>\n<h3>Lesson 2</h3>\n<p><strong><em>mặc dù</em></strong> and <strong><em>tuy nhiên</em></strong> are equivalent to “although” or  “though”. They can be used interchangeably. If your answer containing either one of these is marked wrong, please report to us. </p>\n<p><strong><em>cũng</em></strong> is a helpful word to demonstrate someone <em>also</em> does something. Following this formula: subject (tôi/anh ấy/An/người đàn ông…) + <strong><em>cũng</em></strong> + verb. \n- <strong><em>cũng vậy</em></strong> is another way to shorten similar clauses. Using this structure: subject (tôi/anh ấy/An/người đàn ông…) + <strong><em>cũng vậy</em></strong>, it can replace sentences in this format “so am I/so do I/me too/I do too”. \n- Note: standalone <strong><em>vậy</em></strong> has many uses but mostly, it is equivalent to sentence-initial “so”, as being used as a pause during conversation.</p>",
-          "num_lexemes": 12,
-          "num_missing": 12,
-          "comment_data": {},
-          "dependencies": [
-            "Adjectives 1.5"
-          ],
-          "known_lexemes": [],
-          "progress_v3": {
-            "level": 0
-          },
-          "words": [
-            "chỉ",
-            "một khi",
-            "vậy mà",
-            "như vậy",
-            "trừ khi",
-            "hơn nữa",
-            "mặc dù",
-            "tuy nhiên",
-            "vậy nên",
-            "cũng"
-          ],
-          "num_sessions_for_level": 2,
-          "path": [],
-          "num_levels": 5,
-          "progress_v3_debug_info": {
-            "original_level_session_index": 0,
-            "original": {
-              "level": 0
-            },
-            "original_debug_info": {
-              "level_progress": {
-                "28785e9751105501e65da6a0c0e76538": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "50a3f6aa69abe57fb08ce15be8492531": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "8ec501642f57e84c8cf63469cfb50f85": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "17fa18f7ac7097322f2812fece1c2fda": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "96870701c22ae0001175552b0941a6a4": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "842540ddcc5e63ad17dfff4b3fb96ebc": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "7a77fb1cd76c27b9846f694283857c2a": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "3ee442e80f1be1ff70a411e81a4ce68d": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "b43e2e9f22489e7d1b101a10ff9410b5": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "30223cb22625c5b51222f2c4fe17d493": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "950b8fd6c01798db4a0a7f42331fbe0a": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
-                "3ff7db48c551104cf144d87f65abc9f5": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))"
-              },
-              "lexeme_ids_by_lesson": {
-                "0": [
-                  "28785e9751105501e65da6a0c0e76538",
-                  "7a77fb1cd76c27b9846f694283857c2a",
-                  "b43e2e9f22489e7d1b101a10ff9410b5",
-                  "3ff7db48c551104cf144d87f65abc9f5",
-                  "17fa18f7ac7097322f2812fece1c2fda",
-                  "8ec501642f57e84c8cf63469cfb50f85"
-                ],
-                "1": [
-                  "96870701c22ae0001175552b0941a6a4",
-                  "50a3f6aa69abe57fb08ce15be8492531",
-                  "3ee442e80f1be1ff70a411e81a4ce68d",
-                  "950b8fd6c01798db4a0a7f42331fbe0a",
-                  "842540ddcc5e63ad17dfff4b3fb96ebc",
-                  "30223cb22625c5b51222f2c4fe17d493"
-                ]
-              }
-            }
-          },
-          "short": "Conj. 2",
-          "locked": true,
-          "name": "Conjunctions 2",
-          "language": "vi",
-          "progress_v3_level_session_index": 0,
-          "new_index": 20,
           "progress_percent": 0,
           "mastered": false
         },
@@ -9843,6 +9717,132 @@
           "language": "vi",
           "progress_v3_level_session_index": 0,
           "new_index": 45,
+          "progress_percent": 0,
+          "mastered": false
+        },
+        {
+          "language_string": "Vietnamese",
+          "dependencies_name": [
+            "People",
+            "Abstract Objects 1",
+            "Present 4"
+          ],
+          "practice_recommended": false,
+          "disabled": false,
+          "test_count": 3,
+          "missing_lessons": 3,
+          "lesson": false,
+          "has_explanation": "",
+          "url_title": "Communication",
+          "icon_color": "red",
+          "category": "",
+          "num_lessons": 3,
+          "strength": 0,
+          "beginner": false,
+          "title": "Communication",
+          "level_sessions_finished": 0,
+          "coords_y": 27,
+          "coords_x": 2,
+          "id": "9b9cb445e931f602c211d2619386150b",
+          "levels_finished": 0,
+          "test": true,
+          "lesson_number": 1,
+          "learned": false,
+          "num_translation_nodes": 0,
+          "achievements": [],
+          "description": "",
+          "index": 0,
+          "bonus": false,
+          "explanation": null,
+          "num_lexemes": 19,
+          "num_missing": 19,
+          "comment_data": {},
+          "dependencies": [
+            "People",
+            "Abstract Objects 1",
+            "Verbs 4"
+          ],
+          "known_lexemes": [],
+          "progress_v3": {
+            "level": 0
+          },
+          "words": [
+            "thông tin",
+            "bình luận",
+            "mạng lưới",
+            "báo chí",
+            "truyền thông",
+            "diễn đàn",
+            "thời sự",
+            "tin nhắn",
+            "internet",
+            "mật khẩu"
+          ],
+          "num_sessions_for_level": 3,
+          "path": [],
+          "num_levels": 5,
+          "progress_v3_debug_info": {
+            "original_level_session_index": 0,
+            "original": {
+              "level": 0
+            },
+            "original_debug_info": {
+              "level_progress": {
+                "4d578bca00aaa1f7536f2e9f13f84c53": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "e45bc5dc9ba73734cccc4c57f1d53e8d": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "03c8dfc35b243946322a4202a0402ee9": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "984f6e391ea19de79e4cca86bd2edd97": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "aceaf3ebe52a89e2db0b14e58eb0d121": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "99a5b736c083fc3aee426245d281d349": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "0f0fb30f64b0ab3fc764e1c65daaa708": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "86c77d307b53bb1903d745e0263c2af6": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "a3cdebc7b62e4c74200dc6b44c493f2b": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "e0718ab947f70f5e374149bb3b31ac91": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "595de339291b96464a25be965659eafa": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "330b8fd3e3c7042496a32cec861ac8a3": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "cc72e477eb77c93874f1470c4c3ebeeb": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "727d4d2e711e5c900a2d089e15f6c194": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "65c831e47d1c8c649553881b817139f5": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "960734c2f46218d3b193ff286e3d2480": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "d72aa449fc35dec71d3b5014a690b585": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "043e7b051ed3a5becadb2ab73c684fc7": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))",
+                "8a3bce3ae539df87f3a5f26a80bbb202": "LevelsProgress(levels_finished=0, times_targeted=0, untargeted_progress=0.0, targeted_progress=0.0, last_updated=datetime.datetime(1970, 1, 1, 0, 0))"
+              },
+              "lexeme_ids_by_lesson": {
+                "0": [
+                  "043e7b051ed3a5becadb2ab73c684fc7",
+                  "4d578bca00aaa1f7536f2e9f13f84c53",
+                  "960734c2f46218d3b193ff286e3d2480",
+                  "65c831e47d1c8c649553881b817139f5",
+                  "aceaf3ebe52a89e2db0b14e58eb0d121",
+                  "99a5b736c083fc3aee426245d281d349"
+                ],
+                "1": [
+                  "0f0fb30f64b0ab3fc764e1c65daaa708",
+                  "03c8dfc35b243946322a4202a0402ee9",
+                  "cc72e477eb77c93874f1470c4c3ebeeb",
+                  "727d4d2e711e5c900a2d089e15f6c194",
+                  "330b8fd3e3c7042496a32cec861ac8a3",
+                  "a3cdebc7b62e4c74200dc6b44c493f2b",
+                  "e0718ab947f70f5e374149bb3b31ac91"
+                ],
+                "2": [
+                  "e45bc5dc9ba73734cccc4c57f1d53e8d",
+                  "d72aa449fc35dec71d3b5014a690b585",
+                  "984f6e391ea19de79e4cca86bd2edd97",
+                  "86c77d307b53bb1903d745e0263c2af6",
+                  "8a3bce3ae539df87f3a5f26a80bbb202",
+                  "595de339291b96464a25be965659eafa"
+                ]
+              }
+            }
+          },
+          "short": "Comm.",
+          "locked": true,
+          "name": "Communication",
+          "language": "vi",
+          "progress_v3_level_session_index": 0,
+          "new_index": 30,
           "progress_percent": 0,
           "mastered": false
         },
@@ -10694,28 +10694,15 @@
       "bonus_skills": [],
       "level_points": 60,
       "all_time_rank": [
-        "14",
-        "491392036"
+        "491392036",
+        "492124355"
       ],
       "max_depth_learned": 1,
       "points": 30,
       "immersion_enabled": false,
       "points_ranking_data_dict": {
-        "14": {
-          "username": "Luis",
-          "language_string": "Vietnamese",
-          "points_data": {
-            "languages": [],
-            "total": 54466
-          },
-          "avatar": "//duolingo-images.s3.amazonaws.com/avatars/14/5wZgHBKGS6",
-          "language": "vi",
-          "fullname": "Luis",
-          "id": 14,
-          "self": false
-        },
         "491392036": {
-          "username": "racso9999",
+          "username": "racsoTest1",
           "language_string": "Vietnamese",
           "points_data": {
             "languages": [],
@@ -10726,6 +10713,19 @@
           "fullname": "Racso",
           "id": 491392036,
           "self": true
+        },
+        "492124355": {
+          "username": "racsoTest2",
+          "language_string": "Vietnamese",
+          "points_data": {
+            "languages": [],
+            "total": 10
+          },
+          "avatar": "//s3.amazonaws.com/duolingo-images/avatar/default_2",
+          "language": "vi",
+          "fullname": "Racso",
+          "id": 492124355,
+          "self": false
         }
       },
       "placement_test": {
@@ -10740,7 +10740,7 @@
     "is_available_for_repair": false,
     "google_play_product_id": "com.duolingo.purchase.streakrepair.3",
     "product_id": "streak_3",
-    "days_ago": 17995,
+    "days_ago": 17996,
     "length": 0,
     "last_reached_goal": 1554785080000
   },
@@ -11132,10 +11132,10 @@
   "change-design": false,
   "location": null,
   "is_self_observer": false,
-  "notif_event_ids": null,
+  "notif_event_ids": [],
   "learning_language_string": "Vietnamese",
   "inventory": {},
-  "username": "racso9999",
+  "username": "racsoTest1",
   "bio": "",
   "tts_cdn_url": "http://static.duolingo.com/",
   "email_verified": true,
@@ -11149,9 +11149,9 @@
   "is_follower_by": false,
   "tts_base_url": "https://d7mj4aqfscim2.cloudfront.net/",
   "trial_account": false,
-  "created": "\n\n\n\n\nyesterday\n\n\n\n\n",
+  "created": "\n\n\n\n\n\n2 days ago\n\n\n\n",
   "admin": false,
-  "streak_extended_today": true,
+  "streak_extended_today": false,
   "learning_language": "vi",
   "freeze-permissions": false,
   "avatar": "//s3.amazonaws.com/duolingo-images/avatar/default_2",

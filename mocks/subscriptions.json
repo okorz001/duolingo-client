@@ -1,14 +1,14 @@
 {
   "subscriptions": [
     {
-      "username": "Luis",
-      "picture": "//duolingo-images.s3.amazonaws.com/avatars/14/5wZgHBKGS6",
-      "name": "Luis",
-      "monthlyXp": 180,
-      "weeklyXp": 40,
-      "totalXp": 54486,
-      "id": 14,
-      "hasPlus": true
+      "username": "racsoTest2",
+      "picture": "//s3.amazonaws.com/duolingo-images/avatar/default_2",
+      "name": "Racso",
+      "monthlyXp": 10,
+      "weeklyXp": 10,
+      "totalXp": 10,
+      "id": 492124355,
+      "hasPlus": false
     }
   ]
 }

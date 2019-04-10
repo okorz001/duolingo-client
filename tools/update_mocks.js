@@ -14,7 +14,7 @@ const OUT_DIR = './mocks'
 
 // A user to fetch for user-scoped endpoints
 const USER_ID = 491392036
-const USER_NAME = 'racso9999'
+const USER_NAME = 'racsoTest1'
 
 // Endpoints to hit.
 const ENDPOINTS = [

@@ -80,7 +80,7 @@
         },
         {
           "tier": 0,
-          "count": 1,
+          "count": 2,
           "tierCounts": [
             3,
             3,
@@ -115,7 +115,7 @@
       "observedClassroomIds": [
         3362445
       ],
-      "username": "racso9999",
+      "username": "racsoTest1",
       "picture": "//s3.amazonaws.com/duolingo-images/avatar/default_2",
       "hasGoogleId": false,
       "optionalFeatures": [
