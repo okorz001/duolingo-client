@@ -4,7 +4,8 @@
   "description": "Duolingo Client for JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --testRegex '\\.test\\.js$'",
+    "itest": "jest --testRegex '\\.itest\\.js$'",
     "update_mocks": "node tools/update_mocks"
   },
   "repository": {
