@@ -89,6 +89,14 @@ The login endpoint also sets cookies, but these do not seem to be needed.
 * This is a much more concise endpoint compared to unauthenticated users.
 * The `courses` field only includes languages the user has started, unlike
   the unauthenticated endpoint.
+* This endpoint returns more information if you are logged-in as this user.
+  * If logged-in, the `skills` field is available.
+
+### `https://www.duolingo.com/2017-06-30/users?username=${USERNAME}`
+
+* This is identical to the previous endpoint, but allows querying by name
+  instead of id.
+* Oddly, this version does _not_ require the `fields` query parameter.
 
 ### `https://www.duolingo.com/2017-06-30/users/${USER_ID}/subscriptions`
 
