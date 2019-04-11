@@ -1,8 +1,8 @@
 const fs = require('fs')
 const {promisify} = require('util')
 
-const getJwt = require('../get-jwt')
-const jsonHttpFetch = require('../json-http-fetch')
+const getJwt = require('../src/get-jwt')
+const jsonHttpFetch = require('../src/json-http-fetch')
 
 const writeFile = promisify(fs.writeFile)
 
