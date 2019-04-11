@@ -57,3 +57,47 @@ it('getUser', async () => {
         activeLanguage: 'vi',
     })
 })
+
+it('getLanguage', async () => {
+    mockFetch('users-unauth.json')
+    const client = new DuolingoClient()
+    const lang = await client.getLanguage('racsoTest1', 'vi')
+    expect(lang).toMatchObject({
+        id: 'vi',
+        name: 'Vietnamese',
+    })
+    expect(lang.skills[0]).toEqual({
+        id: '1e791efe88b8b43be8a11f1e5da85184',
+        title: 'Clothing',
+    })
+    expect(lang.skills.length).toEqual(84)
+})
+
+it('getLanguage not active', async () => {
+    mockFetch('users-unauth.json')
+    const client = new DuolingoClient()
+    await expect(client.getLanguage('racsoTest1', 'es')).rejects.toThrow()
+})
+
+it('getSkill', async () => {
+    mockFetch('skills.json')
+    const client = new DuolingoClient()
+    const skill = await client.getSkill('7df994e56b4513b3517f911b56e142d2')
+    expect(skill).toMatchObject({
+        id: '7df994e56b4513b3517f911b56e142d2',
+        language: 'es',
+        title: 'Introduction',
+    })
+    expect(skill.words[0]).toBe('el')
+    expect(skill.words.length).toBe(26)
+})
+
+it('translate', async () => {
+    mockFetch('hints-tokens.json')
+    const client = new DuolingoClient()
+    const translations = await client.translate('en', 'es', ['one', 'two'])
+    expect(translations).toEqual([
+        ['un', 'una', 'uno', '1'],
+        ['dos', '2'],
+    ])
+})
