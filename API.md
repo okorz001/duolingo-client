@@ -15,11 +15,15 @@ These endpoints do not require any special headers.
 
 ### `https://www.duolingo.com/2017-06-30/config`
 
+Mock: [config.json](mocks/config.json)
+
 * Returns global information about Duolingo.
 * The `courses` field describes available languages, but with ids only. The
   keys are the native languages, and the array lists the available languages.
 
 ### `https://www.duolingo.com/users/${USERNAME}`
+
+Mock: [users-unauth.json](mocks/users-unauth.json)
 
 * Returns a lot of information about a user; consider caching.
 * This endpoint returns more information if you are logged-in as this user.
@@ -43,6 +47,10 @@ CEO. 😜
 
 ### `http://d2.duolingo.com/api/1/dictionary/hints/${TO}/${FROM}`
 
+Mocks: [hints-token.json](mocks/hints-token.json),
+       [hints-tokens.json](mocks/hints-tokens.json),
+       [hints-sentence.json](mocks/hints-sentence.json)
+
 * Different host, doesn't require HTTPS.
 * `TO` and `FROM` are language ids, e.g. `en` or `es`.
 * Requires exactly one of the following query parameters:
@@ -54,6 +62,8 @@ CEO. 😜
     `one fish`. (This is probably not useful.)
 
 ### `https://www.duolingo.com/api/1/dictionary_page`
+
+Mock: [dictionary_page.json](mocks/dictionary_page.json)
 
 * Requires query parameter `lexeme_id`.
 * Returns translations and sample sentences for a lexeme.
@@ -78,6 +88,8 @@ The login endpoint also sets cookies, but these do not seem to be needed.
 
 ### `https://www.duolingo.com/2017-06-30/users/${USER_ID}`
 
+Mock: [users-auth.json](mocks/users-auth.json)
+
 * Requires query parameter `fields`, which is a comma-separated list of
   fields to include in the response (response shaping). Passing `*` will
   return all fields.
@@ -89,11 +101,15 @@ The login endpoint also sets cookies, but these do not seem to be needed.
 
 ### `https://www.duolingo.com/2017-06-30/users?username=${USERNAME}`
 
+Mock: [users-auth.json](mocks/users-auth.json)
+
 * This is identical to the previous endpoint, but allows querying by name
   instead of id.
 * Oddly, this version does _not_ require the `fields` query parameter.
 
 ### `https://www.duolingo.com/2017-06-30/users/${USER_ID}/subscriptions`
+
+Mock: [subscriptions.json](mocks/subscriptions.json)
 
 * This returns leaderboard information, including weekly, monthly and total
   xp for the followed users. Unlike the leaderboard widget, this endpoint
@@ -101,18 +117,27 @@ The login endpoint also sets cookies, but these do not seem to be needed.
 
 ### `https://www.duolingo.com/api/1/store/get_items`
 
+Mock: [get_items.json](mocks/get_items.json)
+
 * Returns information about items that can be purchased.
 
 ### `https://www.duolingo.com/2017-06-30/shop-items`
 
+Mock: [shop_items.json](mocks/shop_items.json)
+
 * Returns information about items that can be purchased.
+* This has a different format than the previous endpoint.
 
 ### `https://www.duolingo.com/vocabulary/overview`
+
+Mock: [vocabulary.json](mocks/vocabulary.json)
 
 * Returns information about your active language.
 * `vocab_overview` has the lexemes that you have learned.
 
 ### `https://www.duolingo.com/api/1/skills/show`
+
+Mock: [skills.json](mocks/skills.json)
 
 * Requires query parameter `id` which is a skill id.
 * Returns information about a skill, including words.
