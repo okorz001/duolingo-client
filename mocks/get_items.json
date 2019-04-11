@@ -1,0 +1,97 @@
+{
+  "bonus_skills": [],
+  "misc_items": [
+    {
+      "price": 2,
+      "title": "Double or Nothing",
+      "description": "Attempt to double your two lingot wager by maintaining a three day streak.",
+      "name": "rupee_wager_3"
+    },
+    {
+      "price": 10,
+      "title": "Streak Freeze",
+      "description": "Streak Freeze allows your streak to remain in place for one full day of inactivity.",
+      "name": "streak_freeze"
+    },
+    {
+      "price": 25,
+      "name": "certification"
+    },
+    {
+      "price": 20,
+      "title": "Extra Moves",
+      "description": "Get extra moves to keep going.",
+      "name": "extra_moves"
+    },
+    {
+      "price": 100,
+      "name": "certification_human"
+    },
+    {
+      "price": 15,
+      "title": "",
+      "description": "",
+      "name": "zaps_3"
+    },
+    {
+      "price": 20,
+      "title": "",
+      "description": "",
+      "name": "skill_test_lingots"
+    },
+    {
+      "price": 5,
+      "title": "",
+      "description": "",
+      "name": "skill_test_lingots_5"
+    },
+    {
+      "price": 10,
+      "name": "timed_practice"
+    },
+    {
+      "price": 0,
+      "title": "",
+      "description": "",
+      "name": "streak_repair"
+    },
+    {
+      "price": 4,
+      "title": "Heart Refill",
+      "description": "Allows you to regain one heart lost during a lesson.",
+      "name": "heart_refill"
+    },
+    {
+      "price": 5,
+      "title": "Double or Nothing",
+      "description": "Attempt to double your five lingot wager by maintaining a seven day streak.",
+      "name": "rupee_wager"
+    },
+    {
+      "price": 5,
+      "title": "Zaps",
+      "description": "Use a Zap to skip one question during a lesson.",
+      "name": "zap"
+    },
+    {
+      "price": 20,
+      "title": "",
+      "description": "",
+      "name": "skill_test_lingots_20"
+    }
+  ],
+  "outfits": [
+    {
+      "price": 20,
+      "title": "Formal Attire",
+      "description": "Learn in style. Duo has always been a sharp guy, now he'll look sharp too.",
+      "name": "formal_outfit"
+    },
+    {
+      "price": 30,
+      "title": "Champagne Tracksuit",
+      "description": "Learn in luxury. Duo will love the feel of 24 carat gold silk on his feathers.",
+      "name": "luxury_outfit"
+    }
+  ]
+}

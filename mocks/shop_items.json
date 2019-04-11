@@ -1,0 +1,164 @@
+{
+  "shopItems": [
+    {
+      "name": null,
+      "localizedDescription": null,
+      "price": 0,
+      "type": "in_app_purchase",
+      "id": "premium_subscription",
+      "productId": "com.duolingo.stripe.subscription.premium.onemonth.999"
+    },
+    {
+      "name": null,
+      "localizedDescription": null,
+      "price": 0,
+      "type": "in_app_purchase",
+      "id": "premium_subscription_six_month",
+      "productId": "com.duolingo.stripe.subscription.premium.sixmonth.4794"
+    },
+    {
+      "name": null,
+      "localizedDescription": null,
+      "price": 0,
+      "type": "in_app_purchase",
+      "id": "premium_subscription_twelve_month",
+      "productId": "com.duolingo.stripe.subscription.premium.twelvemonth.8388"
+    },
+    {
+      "name": null,
+      "localizedDescription": null,
+      "price": 0,
+      "type": "in_app_purchase",
+      "id": "premium_subscription_trial7",
+      "productId": "com_duolingo_stripe_subscription_premium_trial7_onemonth_999"
+    },
+    {
+      "name": null,
+      "localizedDescription": null,
+      "price": 0,
+      "type": "in_app_purchase",
+      "id": "premium_subscription_trial7_six_month",
+      "productId": "com_duolingo_stripe_subscription_premium_trial7_sixmonth_4794"
+    },
+    {
+      "name": null,
+      "localizedDescription": null,
+      "price": 0,
+      "type": "in_app_purchase",
+      "id": "premium_subscription_trial7_twelve_month",
+      "productId": "com_duolingo_stripe_subscription_premium_trial7_twelvemonth_8388"
+    },
+    {
+      "price": 20,
+      "type": "outfit",
+      "id": "formal_outfit",
+      "name": "Formal Attire",
+      "localizedDescription": "Learn in style. Duo has always been a sharp guy, now he'll look sharp too."
+    },
+    {
+      "price": 30,
+      "type": "outfit",
+      "id": "luxury_outfit",
+      "name": "Champagne Tracksuit",
+      "localizedDescription": "Learn in luxury. Duo will love the feel of 24 carat gold silk on his feathers."
+    },
+    {
+      "price": 2,
+      "type": "misc",
+      "id": "rupee_wager_3",
+      "name": "Double or Nothing",
+      "localizedDescription": "Attempt to double your two lingot wager by maintaining a three day streak."
+    },
+    {
+      "price": 10,
+      "type": "misc",
+      "id": "streak_freeze",
+      "name": "Streak Freeze",
+      "localizedDescription": "Streak Freeze allows your streak to remain in place for one full day of inactivity."
+    },
+    {
+      "price": 25,
+      "type": "misc",
+      "id": "certification",
+      "name": null,
+      "localizedDescription": null
+    },
+    {
+      "price": 20,
+      "type": "misc",
+      "id": "extra_moves",
+      "name": "Extra Moves",
+      "localizedDescription": "Get extra moves to keep going."
+    },
+    {
+      "price": 100,
+      "type": "misc",
+      "id": "certification_human",
+      "name": null,
+      "localizedDescription": null
+    },
+    {
+      "price": 15,
+      "type": "misc",
+      "id": "zaps_3",
+      "name": "",
+      "localizedDescription": ""
+    },
+    {
+      "price": 20,
+      "type": "misc",
+      "id": "skill_test_lingots",
+      "name": "",
+      "localizedDescription": ""
+    },
+    {
+      "price": 5,
+      "type": "misc",
+      "id": "skill_test_lingots_5",
+      "name": "",
+      "localizedDescription": ""
+    },
+    {
+      "price": 10,
+      "type": "misc",
+      "id": "timed_practice",
+      "name": null,
+      "localizedDescription": null
+    },
+    {
+      "price": 0,
+      "type": "misc",
+      "id": "streak_repair",
+      "name": "",
+      "localizedDescription": ""
+    },
+    {
+      "price": 4,
+      "type": "misc",
+      "id": "heart_refill",
+      "name": "Heart Refill",
+      "localizedDescription": "Allows you to regain one heart lost during a lesson."
+    },
+    {
+      "price": 5,
+      "type": "misc",
+      "id": "rupee_wager",
+      "name": "Double or Nothing",
+      "localizedDescription": "Attempt to double your five lingot wager by maintaining a seven day streak."
+    },
+    {
+      "price": 5,
+      "type": "misc",
+      "id": "zap",
+      "name": "Zaps",
+      "localizedDescription": "Use a Zap to skip one question during a lesson."
+    },
+    {
+      "price": 20,
+      "type": "misc",
+      "id": "skill_test_lingots_20",
+      "name": "",
+      "localizedDescription": ""
+    }
+  ]
+}

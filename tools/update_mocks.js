@@ -59,6 +59,21 @@ const ENDPOINTS = [
         auth: true,
         out: 'subscriptions.json',
     },
+    {
+        url: 'https://www.duolingo.com/api/1/store/get_items',
+        auth: true,
+        out: 'get_items.json',
+    },
+    {
+        url: 'https://www.duolingo.com/2017-06-30/shop-items',
+        auth: true,
+        out: 'shop_items.json',
+    },
+    {
+        url: 'https://www.duolingo.com/vocabulary/overview',
+        auth: true,
+        out: 'vocabulary.json',
+    },
 ]
 
 async function main() {
