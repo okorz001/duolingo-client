@@ -20,7 +20,7 @@ it('login/logout', async () => {
         username: 'user',
         headers: {
             authorization: 'Bearer JWT',
-        }
+        },
     })
 
     client.logout()
@@ -52,7 +52,7 @@ it('getUser', async () => {
                 name: 'Vietnamese',
                 level: 1,
                 points: 30,
-            }
+            },
         ],
         activeLanguage: 'vi',
     })

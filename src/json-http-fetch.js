@@ -6,7 +6,7 @@ async function jsonHttpFetch(method, url, headers, body) {
     return processResponse(res)
 }
 
-function createRequest(method, url, headers={}, body=null) {
+function createRequest(method, url, headers = {}, body = null) {
     // convert headers to Headers object
     headers = new Headers(headers)
 

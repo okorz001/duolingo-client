@@ -1,0 +1,55 @@
+---
+env:
+    # TODO: find an impl that isn't global
+    # for Fetch API
+    browser: true
+    # for Promise
+    es6: true
+    node: true
+parserOptions:
+    # for async/await
+    ecmaVersion: 2017
+extends:
+-   'eslint:recommended'
+rules:
+    array-bracket-spacing: error
+    block-spacing: error
+    camelcase: error
+    comma-dangle: [error, always-multiline]
+    comma-spacing: error
+    comma-style: error
+    eol-last: error
+    func-call-spacing: error
+    func-name-matching: error
+    function-paren-newline: [error, never]
+    indent:
+    -   error
+    -   4
+    -   FunctionExpression:
+            parameters: first
+        CallExpression:
+            arguments: first
+        ArrayExpression: first
+        ObjectExpression: first
+    key-spacing: error
+    keyword-spacing: error
+    linebreak-style: error
+    line-comment-position: error
+    lines-between-class-members: error
+    max-len:
+    -   error
+    -   ignoreRegExpLiterals: true
+        ignoreStrings: true
+        ignoreTemplateLiterals: true
+        ignoreUrls: true
+    # TODO: use a logger
+    no-console: off
+    no-trailing-spaces: error
+    no-var: error
+    object-curly-newline: error
+    object-curly-spacing: error
+    padded-blocks: [error, never]
+    semi: [error, never]
+    space-in-parens: error
+    space-infix-ops: error
+    space-unary-ops: error
