@@ -8,8 +8,8 @@
   ],
   "scripts": {
     "test": "npm-run-all test:*",
-    "test:unit": "jest --testRegex '\\.test\\.js$'",
-    "test:integration": "jest --testRegex '\\.itest\\.js$'",
+    "test:unit": "jest --testMatch \"**/*.test.js\"",
+    "test:integration": "jest --testMatch \"**/*.itest.js\"",
     "update_mocks": "node tools/update_mocks"
   },
   "repository": {
