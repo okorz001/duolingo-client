@@ -3,6 +3,7 @@ const jsonHttpFetch = require('./json-http-fetch')
 
 /**
  * A high-level client for the Duolingo API.
+ * @memberof! duolingo-client
  */
 class DuolingoClient {
     /**
@@ -23,7 +24,7 @@ class DuolingoClient {
      * @param {string} username The username to login as.
      * @param {string} password The user's password.
      * @return {Promise<void>}
-     * @see {@link getJwt}
+     * @see {@link duolingo-client.getJwt}
      */
     async login(username, password) {
         const jwt = await getJwt(username, password)
