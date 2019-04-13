@@ -2,13 +2,13 @@
   "name": "duolingo-client",
   "version": "1.0.0",
   "description": "Duolingo Client for JavaScript",
-  "main": "index.js",
+  "main": "src/index.js",
   "files": [
     "src"
   ],
   "scripts": {
-    "clean": "rimraf docs",
-    "docs": "jsdoc -d docs README.md index.js src",
+    "clean": "rimraf dist",
+    "docs": "jsdoc -d dist/docs src",
     "lint": "eslint index.js src tests",
     "test": "npm-run-all lint test:*",
     "test:unit": "jest --testMatch \"**/*.test.js\"",

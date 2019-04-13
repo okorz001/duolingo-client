@@ -2,5 +2,5 @@
 node_modules/
 # mostly useless for library, very noisy
 package-lock.json
-# jsdoc
-docs/
+# artifacts
+dist/
