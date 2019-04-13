@@ -33,7 +33,6 @@ rules:
         ObjectExpression: first
     key-spacing: error
     keyword-spacing: error
-    linebreak-style: error
     line-comment-position: error
     lines-between-class-members: error
     max-len:
