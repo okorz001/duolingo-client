@@ -9,7 +9,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "docs": "jsdoc -d dist/docs src",
-    "lint": "eslint index.js src tests",
+    "lint": "eslint src tests",
     "test": "npm-run-all lint test:*",
     "test:unit": "jest --testMatch \"**/*.test.js\"",
     "test:integration": "jest --testMatch \"**/*.itest.js\"",
