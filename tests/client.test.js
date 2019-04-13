@@ -61,7 +61,7 @@ it('getUser', async () => {
 it('getLanguage', async () => {
     mockFetch('users-unauth.json')
     const client = new DuolingoClient()
-    const lang = await client.getLanguage('racsoTest1', 'vi')
+    const lang = await client.getLanguage('vi', 'racsoTest1')
     expect(lang).toMatchObject({
         id: 'vi',
         name: 'Vietnamese',
@@ -76,7 +76,7 @@ it('getLanguage', async () => {
 it('getLanguage not active', async () => {
     mockFetch('users-unauth.json')
     const client = new DuolingoClient()
-    await expect(client.getLanguage('racsoTest1', 'es')).rejects.toThrow()
+    await expect(client.getLanguage('es', 'racsoTest1')).rejects.toThrow()
 })
 
 it('getSkill', async () => {
