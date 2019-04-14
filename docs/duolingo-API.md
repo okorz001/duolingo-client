@@ -133,8 +133,10 @@ Mock: [shop_items.json](../mocks/shop_items.json)
 Mock: [purchase_store_item.json](../mocks/purchase_store_item.json)
 
 * `POST` with a JSON containing `learningLanguage` and `name` fields.
+* `learningLanguage` is not required for all items (e.g. `streak_freeze`).
 * Purchases an item from the store for the user.
 * On failure, returns `400` with an `error` field in JSON body.
+  * `error` is `ALREADY_HAVE_STORE_ITEM` if already have the item.
 
 ### `https://www.duolingo.com/vocabulary/overview`
 

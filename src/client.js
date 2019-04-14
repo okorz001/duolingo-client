@@ -154,6 +154,8 @@ class DuolingoClient {
      */
     /**
      * Fetches a skill by id.
+     * <p>
+     * <b>Requires authentication.</b>
      * @param {string} id The skill id to fetch.
      * @return {Promise<Skill>} The skill.
      */
@@ -193,6 +195,43 @@ class DuolingoClient {
         const url = `http://d2.duolingo.com/api/1/dictionary/hints/${to}/${from}?tokens=${tokens}`
         const res = await jsonHttpFetch('GET', url)
         return words.map(word => res.body[word])
+    }
+
+    /**
+     * Buys streak freeze for the logged-in user.
+     * <p>
+     * <b>Requires authentication.</b>
+     * @return {Promise<boolean>} Returns true if streak freeze was bought, or
+     *                            false if this user already has streak freeze.
+     */
+    async buyStreakFreeze() {
+        return this.buyItem('streak_freeze')
+    }
+
+    /**
+     * Buy an item for the logged-in user.
+     * <p>
+     * Some items, such as extra skills, are scoped to a particular language.
+     * To purchase such an item, the language must be specified.
+     * <p>
+     * <b>Requires authentication.</b>
+     * @param {string} item The name (id) of the item to buy.
+     * @param {string} language Optional: The language to buy the item for/in.
+     * @return {Promise<boolean>} Returns true if the item was bought, or
+     *                            false if this user already has the item.
+     */
+    async buyItem(item, language) {
+        if (!this.auth) {
+            throw new Error('Login required')
+        }
+
+        const url = `https://www.duolingo.com/2017-06-30/users/${this.auth.userId}/purchase-store-item`
+        const body = {name: item, learningLanguage: language}
+        const res = await jsonHttpFetch('POST', url, this.auth.headers, body)
+        if (res.body.error == 'ALREADY_HAVE_STORE_ITEM') {
+            return false
+        }
+        return true
     }
 }
 

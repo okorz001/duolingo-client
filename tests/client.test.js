@@ -105,3 +105,18 @@ it('translate', async () => {
         ['dos', '2'],
     ])
 })
+
+it('buyItem', async () => {
+    mockFetch('purchase_store_item.json')
+    const client = new DuolingoClient()
+    const result = await client.buyItem('streak_freeze')
+    expect(result).toBe(true)
+})
+
+it('buyItem already bought', async () => {
+    const body = {error: 'ALREADY_HAVE_STORE_ITEM'}
+    jsonHttpFetch.mockResolvedValue({body})
+    const client = new DuolingoClient()
+    const result = await client.buyItem('streak_freeze')
+    expect(result).toBe(false)
+})
