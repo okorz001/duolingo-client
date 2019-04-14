@@ -1,8 +1,8 @@
 const fs = require('fs')
 const {promisify} = require('util')
 
-const getJwt = require('../src/get-jwt')
 const jsonHttpFetch = require('../src/json-http-fetch')
+const login = require('../src/login')
 
 const writeFile = promisify(fs.writeFile)
 
@@ -84,7 +84,7 @@ async function main() {
         .forEach(it => promises.push(update(it)))
 
     if (DUOLINGO_USERNAME && DUOLINGO_PASSWORD) {
-        const jwt = await getJwt(DUOLINGO_USERNAME, DUOLINGO_PASSWORD)
+        const {jwt} = await login(DUOLINGO_USERNAME, DUOLINGO_PASSWORD)
         const headers = {Authorization: `Bearer ${jwt}`}
         console.log(`Logged in as ${DUOLINGO_USERNAME}`)
 

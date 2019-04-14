@@ -1,4 +1,4 @@
-const getJwt = require('../src/get-jwt')
+const login = require('../src/login')
 
 const {DUOLINGO_USERNAME, DUOLINGO_PASSWORD} = process.env
 let withAuth = it
@@ -8,11 +8,12 @@ if (!DUOLINGO_USERNAME || !DUOLINGO_PASSWORD) {
                  'skipping authed tests')
 }
 
-withAuth('getJwt', async () => {
-    const jwt = await getJwt(DUOLINGO_USERNAME, DUOLINGO_PASSWORD)
+withAuth('login', async () => {
+    const {jwt, userId} = await login(DUOLINGO_USERNAME, DUOLINGO_PASSWORD)
     expect(typeof jwt).toEqual('string')
+    expect(typeof userId).toEqual('number')
 })
 
 it('login failure', async () => {
-    await expect(getJwt('someuser', 'somepass')).rejects.toThrow()
+    await expect(login('someuser', 'somepass')).rejects.toThrow()
 })

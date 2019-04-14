@@ -1,23 +1,27 @@
 const fs = require('fs')
 
 const DuolingoClient = require('../src/client')
-const getJwt = require('../src/get-jwt')
 const jsonHttpFetch = require('../src/json-http-fetch')
+const login = require('../src/login')
 
 // 'npm test' runs in repo root, so this is relative to that
 const MOCK_DIR = 'mocks'
 
-jest.mock('../src/get-jwt')
+jest.mock('../src/login')
 jest.mock('../src/json-http-fetch')
 
 it('login/logout', async () => {
     const client = new DuolingoClient()
     expect(client.auth).toEqual({})
 
-    getJwt.mockReturnValue('JWT')
+    login.mockReturnValue({
+        jwt: 'JWT',
+        userId: 123,
+    })
     await client.login('user', 'password')
     expect(client.auth).toMatchObject({
         username: 'user',
+        userId: 123,
         headers: {
             authorization: 'Bearer JWT',
         },

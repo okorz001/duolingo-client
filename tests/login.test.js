@@ -1,5 +1,5 @@
-const getJwt = require('../src/get-jwt')
 const jsonHttpFetch = require('../src/json-http-fetch')
+const login = require('../src/login')
 
 jest.mock('../src/json-http-fetch')
 
@@ -7,15 +7,21 @@ beforeEach(() => {
     jsonHttpFetch.mockReset()
 })
 
-it('getJwt', async () => {
+it('login', async () => {
     jsonHttpFetch.mockResolvedValue({
         headers: new Headers({
             jwt: 'secret',
         }),
-        body: {},
+        body: {
+            /* eslint-disable-next-line camelcase */
+            user_id: '123',
+        },
     })
-    const jwt = await getJwt('someuser', 'somepass')
-    expect(jwt).toEqual('secret')
+    const result = await login('someuser', 'somepass')
+    expect(result).toMatchObject({
+        jwt: 'secret',
+        userId: 123,
+    })
 })
 
 it('login failure', async () => {
@@ -25,5 +31,5 @@ it('login failure', async () => {
             message: "PC LOAD LETTER",
         },
     })
-    await expect(getJwt('someuser', 'somepass')).rejects.toThrow()
+    await expect(login('someuser', 'somepass')).rejects.toThrow()
 })

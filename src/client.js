@@ -1,5 +1,5 @@
-const getJwt = require('./get-jwt')
 const jsonHttpFetch = require('./json-http-fetch')
+const login = require('./login')
 
 /**
  * A high-level client for the Duolingo API.
@@ -24,12 +24,13 @@ class DuolingoClient {
      * @param {string} username The username to login as.
      * @param {string} password The user's password.
      * @return {Promise<void>}
-     * @see {@link duolingo-client.getJwt}
+     * @see {@link duolingo-client.login}
      */
     async login(username, password) {
-        const jwt = await getJwt(username, password)
+        const {jwt, userId} = await login(username, password)
         this.auth = {
             username,
+            userId,
             headers: {
                 authorization: `Bearer ${jwt}`,
             },

@@ -47,23 +47,26 @@ client.logout()
 The `DuolingoClient` documentation describes what APIs are available and which
 APIs require authentication.
 
-# Low-level Utilities
+# Low-Level Utilities
 
-## getJwt
+## login
 
-The `getJwt` function can be used to get a JWT for authenticated API calls.
+The `login` function can be used to get a JWT for authenticated API calls.
 This is the underlying function for `DuolingoClient.login`.
 
 ```js
-const {getJwt} = require('duolingo-client')
-const JWT = await getJwt('username123', 'secret password')
+const {login} = require('duolingo-client')
+const {jwt, userId} = await login('username123', 'secret password')
 ```
 
 You can call the Duolingo API with any HTTP client by setting the
 `Authorization` header with the `Bearer` scheme.
 
 ```js
-const headers = {Authorization: `Bearer ${JWT}`}
+const headers = {Authorization: `Bearer ${jwt}`}
 // or
-setHeader('Authorization', `Bearer ${JWT}`)
+setHeader('Authorization', `Bearer ${jwt}`)
 ```
+
+This function also returns the user's id. The user id is not needed for
+authorization, but some API calls use a user id instead of a username.

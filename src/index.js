@@ -1,5 +1,5 @@
 const DuolingoClient = require('./client')
-const getJwt = require('./get-jwt')
+const login = require('./login')
 
 /**
  * The object returned by <code>require('duolingo-client')</code>.
@@ -7,5 +7,5 @@ const getJwt = require('./get-jwt')
  */
 module.exports = {
     DuolingoClient,
-    getJwt,
+    login,
 }
