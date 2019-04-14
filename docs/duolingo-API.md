@@ -128,6 +128,14 @@ Mock: [shop_items.json](../mocks/shop_items.json)
 * Returns information about items that can be purchased.
 * This has a different format than the previous endpoint.
 
+### `https://www.duolingo.com/2017-06-30/users/${USER_ID}/purchase-store-item`
+
+Mock: [purchase_store_item.json](../mocks/purchase_store_item.json)
+
+* `POST` with a JSON containing `learningLanguage` and `name` fields.
+* Purchases an item from the store for the user.
+* On failure, returns `400` with an `error` field in JSON body.
+
 ### `https://www.duolingo.com/vocabulary/overview`
 
 Mock: [vocabulary.json](../mocks/vocabulary.json)
