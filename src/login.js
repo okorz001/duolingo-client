@@ -11,7 +11,7 @@ const jsonHttpFetch = require('./json-http-fetch')
  * @param {string} username The username to login as.
  * @param {string} password The user's password.
  * @return {Promise<LoginResult>} A JWT for the user and their user id.
- * @memberof! duolingo-client
+ * @memberof! module:duolingo-client
  */
 async function login(username, password) {
     const res = await jsonHttpFetch('POST',

@@ -3,7 +3,7 @@ const login = require('./login')
 
 /**
  * The object returned by <code>require('duolingo-client')</code>.
- * @namespace duolingo-client
+ * @module duolingo-client
  */
 module.exports = {
     DuolingoClient,

@@ -3,7 +3,7 @@ const login = require('./login')
 
 /**
  * A high-level client for the Duolingo API.
- * @memberof! duolingo-client
+ * @memberof! module:duolingo-client
  */
 class DuolingoClient {
     /**
@@ -24,7 +24,6 @@ class DuolingoClient {
      * @param {string} username The username to login as.
      * @param {string} password The user's password.
      * @return {Promise<void>}
-     * @see {@link duolingo-client.login}
      */
     async login(username, password) {
         const {jwt, userId} = await login(username, password)
