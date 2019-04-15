@@ -1,14 +1,16 @@
+# Usage
+
 The `duolingo-client` package exposes both a high-level Duolingo API client as
 well as some low-level utility functions that can help you call the Duolingo
 API directly.
 
-# High-Level Client
+## High-Level Client
 
 The high-level client is exported as the `DuolingoClient` class. This class
 handles request creation and response parsing and tries to present a reasonable
 data model for the Duolingo.
 
-## Creating a client
+### Creating a client
 
 Create an instance of `DuolingoClient` to use the Duolingo API.
 
@@ -18,7 +20,7 @@ const client = new DuolingoClient()
 // call unauthenticated APIs
 ```
 
-## Logging in
+### Logging in
 
 Some Duolingo APIs require authentication. To call an authenticated API, you
 must first login with a valid username and password.
@@ -28,7 +30,7 @@ await client.login('username123', 'secret password')
 // call authenticated (or unauthenticated) APIs
 ```
 
-## Logging out
+### Logging out
 
 You can discard user credentials by either logging in to a different user or
 by using the logout method.
@@ -47,9 +49,9 @@ client.logout()
 The `DuolingoClient` documentation describes what APIs are available and which
 APIs require authentication.
 
-# Low-Level Utilities
+## Low-Level Utilities
 
-## login
+### login
 
 The `login` function can be used to get a JWT for authenticated API calls.
 This is the underlying function for `DuolingoClient.login`.

@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "clean": "rimraf dist",
-    "docs": "jsdoc -d dist/docs -R docs/usage.md src",
+    "docs": "jsdoc -d dist/docs -t node_modules/namis -R docs/usage.md src",
     "lint": "eslint src tests",
     "test": "npm-run-all lint test:*",
     "test:unit": "jest --testMatch \"**/*.test.js\"",
@@ -38,6 +38,7 @@
     "eslint": "^5.16.0",
     "jest": "^24.7.1",
     "jsdoc": "^3.5.5",
+    "namis": "^1.0.3",
     "npm-run-all": "^4.1.5",
     "rimraf": "^2.6.3"
   }
