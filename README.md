@@ -2,6 +2,7 @@
 
 An unofficial [Duolingo](https://www.duolingo.com) client for JavaScript.
 
+[![npm Release](https://img.shields.io/npm/v/duolingo-client.svg?style=flat)](https://www.npmjs.com/package/duolingo-client)
 [![Build Status](https://travis-ci.com/okorz001/duolingo-client.svg?branch=master)](https://travis-ci.com/okorz001/duolingo-client)
 
 ## Requirements
