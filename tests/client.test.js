@@ -106,6 +106,20 @@ it('translate', async () => {
     ])
 })
 
+it('getShopItems', async () => {
+    mockFetch('shop_items.json')
+    const client = new DuolingoClient()
+    const items = await client.getShopItems()
+    expect(items[0]).toMatchObject({
+        id: 'formal_outfit',
+        type: 'outfit',
+        name: 'Formal Attire',
+        description: "Learn in style. Duo has always been a sharp guy, now he'll look sharp too.",
+        price: 20,
+    })
+    expect(items.length).toEqual(8)
+})
+
 it('buyItem', async () => {
     mockFetch('purchase_store_item.json')
     const client = new DuolingoClient()

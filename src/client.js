@@ -198,6 +198,41 @@ class DuolingoClient {
     }
 
     /**
+     * @typedef Item
+     * @prop {string} id The item's id.
+     * @prop {string} type The item's category, e.g. "misc" or "outfit".
+     * @prop {string} name The item's display name.
+     * @prop {string} description The item's description.
+     * @prop {integer} price The cost to purchase this item.
+     */
+    /**
+     * Gets items available for purchase by the logged-in user.
+     * <p>
+     * <b>Requires authentication.</b>
+     * @return {Promise<Item[]>} The items available.
+     */
+    async getShopItems() {
+        if (!this.auth) {
+            throw new Error('Login required')
+        }
+
+        const url = 'https://www.duolingo.com/2017-06-30/store-items'
+        const res = await jsonHttpFetch('GET', url, this.auth.headers)
+        return res.body.shopItems
+            // hide in-app purchases that cost real money
+            .filter(item => item.type != 'in_app_purchase')
+            // hide things that don't show in the app
+            .filter(item => item.name && item.localizedDescription)
+            .map(item => ({
+                id: item.id,
+                type: item.type,
+                name: item.name,
+                description: item.localizedDescription,
+                price: item.price,
+            }))
+    }
+
+    /**
      * Buys streak freeze for the logged-in user.
      * <p>
      * <b>Requires authentication.</b>
@@ -215,7 +250,7 @@ class DuolingoClient {
      * To purchase such an item, the language must be specified.
      * <p>
      * <b>Requires authentication.</b>
-     * @param {string} item The name (id) of the item to buy.
+     * @param {string} item The id of the item to buy.
      * @param {string} language Optional: The language to buy the item for/in.
      * @return {Promise<boolean>} Returns true if the item was bought, or
      *                            false if this user already has the item.
