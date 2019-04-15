@@ -13,6 +13,14 @@ In theory, duolingo-client will run in any browser that supports
 async/await. However, the Duolingo APIs do not support CORS, so in practice
 it is not very useful in a browser.
 
+## Install
+
+duolingo-client is published to npm.
+
+```sh
+$ npm install duolingo-client
+```
+
 ## Documentation
 
 JSDoc for master is published after every successful build to
