@@ -68,6 +68,13 @@ Mock: [dictionary_page.json](../mocks/dictionary_page.json)
 * Requires query parameter `lexeme_id`.
 * Returns translations and sample sentences for a lexeme.
 
+### `https://www.duolingo.com/api/1/courses/list`
+
+Mock: [courses.json](../mocks/courses.json)
+
+* Returns global course information.
+* This does not include any skill information.
+
 ### `https://www.duolingo.com/login`
 
 * `POST` with a JSON containing `login` and `password` fields.

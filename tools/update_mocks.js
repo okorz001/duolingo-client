@@ -74,6 +74,10 @@ const ENDPOINTS = [
         auth: true,
         out: 'vocabulary.json',
     },
+    {
+        url: 'https://www.duolingo.com/api/1/courses/list',
+        out: 'courses.json',
+    },
 ]
 
 async function main() {
