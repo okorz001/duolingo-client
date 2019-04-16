@@ -105,6 +105,9 @@ Mock: [users-auth.json](../mocks/users-auth.json)
   the unauthenticated endpoint.
 * This endpoint returns more information if you are logged-in as this user.
   * If logged-in, the `skills` field is available.
+* You can `PATCH` this endpoint to modify the user.
+  * You can change the active course by setting either `courseId` or both
+    `fromLanguage` and `learningLanguage`.
 
 ### `https://www.duolingo.com/2017-06-30/users?username=${USERNAME}`
 
