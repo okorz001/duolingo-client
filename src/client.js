@@ -1,6 +1,18 @@
 const jsonHttpFetch = require('./json-http-fetch')
 const login = require('./login')
 
+function getCourseId(learningLanguageId, fromLanguageId) {
+    return `DUOLINGO_${learningLanguageId.toUpperCase()}_${fromLanguageId.toUpperCase()}`
+}
+
+function parseCourseId(courseId) {
+    const match = /^DUOLINGO_(\w+)_(\w+)$/.exec(courseId)
+    return {
+        learningLanguageId: match[1].toLowerCase(),
+        fromLanguageId: match[2].toLowerCase(),
+    }
+}
+
 /**
  * A high-level client for the Duolingo API.
  * @memberof! module:duolingo-client
@@ -103,10 +115,47 @@ class DuolingoClient {
     }
 
     /**
+     * @typedef Course
+     * @prop {string} The id of this course.
+     * @prop {Language} learningLanguage The language taught in this course.
+     * @prop {Language} fromLanguage The native/UI language of this course.
+     * @prop {integer} phase The release state of the course:
+     *                       <li>1 = Hatching</li>
+     *                       <li>2 = Beta</li>
+     *                       <li>3 = Released</li>
+     * @prop {integer} progress How complete the course is.
+     * @prop {integer} usersCount The number of users taking the course.
+     */
+    /**
+     * Gets all available courses.
+     * @return {Promise<Course[]>} All available courses.
+     */
+    async getCourses() {
+        const url = 'https://www.duolingo.com/api/1/courses/list'
+        const res = await jsonHttpFetch('GET', url)
+        return res.body.map(course => ({
+            id: getCourseId(course.learning_language,
+                            course.from_language),
+            learningLanguage: {
+                id: course.learning_language,
+                name: course.learning_language_name,
+            },
+            fromLanguage: {
+                id: course.from_language,
+                name: course.from_language_name,
+            },
+            phase: course.phase,
+            progress: course.phase == 1 ? course.progress : 100,
+            usersCount: course.num_learners,
+        }))
+    }
+
+    /**
      * @typedef Language
      * @prop {string} id The id of this language.
      * @prop {string} name The display name of this language.
      * @prop {LanguageSkill[]} skills The skills in this language.
+     * @deprecated Skills will be removed from Language.
      */
     /**
      * @typedef LanguageSkill
@@ -270,3 +319,6 @@ class DuolingoClient {
 }
 
 module.exports = DuolingoClient
+// for testing
+module.exports.getCourseId = getCourseId
+module.exports.parseCourseId = parseCourseId

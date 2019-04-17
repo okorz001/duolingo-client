@@ -1,6 +1,7 @@
 const fs = require('fs')
 
 const DuolingoClient = require('../src/client')
+const {getCourseId, parseCourseId} = DuolingoClient
 const jsonHttpFetch = require('../src/json-http-fetch')
 const login = require('../src/login')
 
@@ -60,6 +61,27 @@ it('getUser', async () => {
         ],
         activeLanguage: 'vi',
     })
+})
+
+it('getCourses', async () => {
+    mockFetch('courses.json')
+    const client = new DuolingoClient()
+    const courses = await client.getCourses()
+    expect(courses[0]).toMatchObject({
+        id: 'DUOLINGO_EN_RU',
+        learningLanguage: {
+            id: 'en',
+            name: 'English',
+        },
+        fromLanguage: {
+            id: 'ru',
+            name: 'Russian',
+        },
+        phase: 3,
+        progress: 100,
+        usersCount: 5369622,
+    })
+    expect(courses.length).toEqual(100)
 })
 
 it('getLanguage', async () => {
@@ -133,4 +155,23 @@ it('buyItem already bought', async () => {
     const client = new DuolingoClient()
     const result = await client.buyItem('streak_freeze')
     expect(result).toBe(false)
+})
+
+it.each([
+    ['es', 'en', 'DUOLINGO_ES_EN'],
+    ['en', 'ru', 'DUOLINGO_EN_RU'],
+])('getCourseId %s %s', (learningLanguageId, fromLanguageId, courseId) => {
+    const result = getCourseId(learningLanguageId, fromLanguageId)
+    expect(result).toEqual(courseId)
+})
+
+it.each([
+    ['DUOLINGO_ES_EN', 'es', 'en'],
+    ['DUOLINGO_EN_RU', 'en', 'ru'],
+])('parseCourseId %s', (courseId, learningLanguageId, fromLanguageId) => {
+    const result = parseCourseId(courseId)
+    expect(result).toMatchObject({
+        learningLanguageId,
+        fromLanguageId,
+    })
 })
