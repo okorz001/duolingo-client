@@ -60,6 +60,7 @@ it('getUser', async () => {
             },
         ],
         activeLanguage: 'vi',
+        currentCourseId: 'DUOLINGO_VI_EN',
     })
 })
 

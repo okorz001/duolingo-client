@@ -65,6 +65,9 @@ class DuolingoClient {
      * @prop {UserLanguage[]} languages Langauges being learned by this user.
      * @prop {string} activeLanguage The language id currently being learned
      *                               by this user.
+     * @prop {string} currentCourseId The id of the course that is currently
+     *                                active for this user.
+     * @deprecated languages, activeLanguage
      */
     /**
      * @typedef UserStreak
@@ -111,6 +114,8 @@ class DuolingoClient {
             },
             languages,
             activeLanguage: res.body.learning_language,
+            currentCourseId: getCourseId(res.body.learning_language,
+                                         res.body.ui_language),
         }
     }
 
@@ -315,6 +320,23 @@ class DuolingoClient {
             return false
         }
         return true
+    }
+
+    /**
+     * Switches the active course for the logged-in user.
+     * @param {string} courseId The course to switch to.
+     * <p>
+     * <b>Requires authentication.</b>
+     */
+    async switchCourse(courseId) {
+        if (!this.auth) {
+            throw new Error('Login required')
+        }
+
+        // set fields to empty to avoid getting entire user back
+        const url = `https://www.duolingo.com/2017-06-30/users/${this.auth.userId}?fields=`
+        const body = {courseId}
+        return jsonHttpFetch('PATCH', url, this.auth.headers, body)
     }
 }
 
