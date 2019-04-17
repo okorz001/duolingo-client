@@ -324,9 +324,9 @@ class DuolingoClient {
 
     /**
      * Switches the active course for the logged-in user.
-     * @param {string} courseId The course to switch to.
      * <p>
      * <b>Requires authentication.</b>
+     * @param {string} courseId The course to switch to.
      */
     async switchCourse(courseId) {
         if (!this.auth) {
