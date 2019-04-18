@@ -39,7 +39,7 @@ function mockFetch(filename) {
 }
 
 it('getUser', async () => {
-    mockFetch('users-unauth.json')
+    mockFetch('users.json')
     const client = new DuolingoClient()
     const user = await client.getUser('racsoTest1')
     expect(user).toMatchObject({
@@ -86,7 +86,7 @@ it('getCourses', async () => {
 })
 
 it('getLanguage', async () => {
-    mockFetch('users-unauth.json')
+    mockFetch('users.json')
     const client = new DuolingoClient()
     const lang = await client.getLanguage('vi', 'racsoTest1')
     expect(lang).toMatchObject({
@@ -101,7 +101,7 @@ it('getLanguage', async () => {
 })
 
 it('getLanguage not active', async () => {
-    mockFetch('users-unauth.json')
+    mockFetch('users.json')
     const client = new DuolingoClient()
     await expect(client.getLanguage('es', 'racsoTest1')).rejects.toThrow()
 })
