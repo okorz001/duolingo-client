@@ -18,6 +18,9 @@ async function login(username, password) {
                                     'https://www.duolingo.com/login',
                                     {},
                                     {login: username, password})
+    if (!res.ok) {
+        throw new Error(res.statusText)
+    }
     // Authentication failure stills returns 200, but sets failure in body
     if (res.body.failure) {
         throw new Error(res.body.message)

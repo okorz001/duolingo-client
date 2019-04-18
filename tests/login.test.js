@@ -9,6 +9,9 @@ beforeEach(() => {
 
 it('login', async () => {
     jsonHttpFetch.mockResolvedValue({
+        ok: true,
+        status: 200,
+        statusText: 'OK',
         headers: new Headers({
             jwt: 'secret',
         }),
@@ -24,12 +27,24 @@ it('login', async () => {
     })
 })
 
-it('login failure', async () => {
+it('login failure body', async () => {
     jsonHttpFetch.mockResolvedValue({
+        ok: true,
+        status: 200,
+        statusText: 'OK',
         body: {
             failure: "oops",
             message: "PC LOAD LETTER",
         },
+    })
+    await expect(login('someuser', 'somepass')).rejects.toThrow()
+})
+
+it('login failure status', async () => {
+    jsonHttpFetch.mockResolvedValue({
+        ok: false,
+        status: 403,
+        statusText: 'Forbidden',
     })
     await expect(login('someuser', 'somepass')).rejects.toThrow()
 })
