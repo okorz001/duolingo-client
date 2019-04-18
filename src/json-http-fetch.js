@@ -1,5 +1,7 @@
 require('isomorphic-fetch')
 
+const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+
 async function jsonHttpFetch(method, url, headers, body) {
     const req = createRequest(method, url, headers, body)
     const res = await fetch(req)
@@ -19,6 +21,9 @@ function createRequest(method, url, headers = {}, body = null) {
         headers.set('Content-Type', 'application/json; charset=utf-8')
         headers.set('Content-Length', body.length)
     }
+
+    // try to avoid user-agent blocking
+    headers.set('User-Agent', USER_AGENT)
 
     return new Request(url, {method, headers, body})
 }

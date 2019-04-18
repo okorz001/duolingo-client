@@ -13,7 +13,7 @@ it.each([
     const headers = new Headers({
         Accept: 'application/json',
     })
-    expect(req.headers).toEqual(headers)
+    expect(req.headers).toMatchObject(headers)
     expect(req.body).toBeUndefined()
 })
 
@@ -26,7 +26,7 @@ it('createRequest merge headers', () => {
         Accept: 'application/json',
         'X-My-Cool-Header': 'foo',
     })
-    expect(req.headers).toEqual(headersOut)
+    expect(req.headers).toMatchObject(headersOut)
 })
 
 it('createRequest body', async () => {
@@ -37,7 +37,7 @@ it('createRequest body', async () => {
         'Content-Type': 'application/json; charset=utf-8',
         'Content-Length': '13',
     })
-    expect(req.headers).toEqual(headers)
+    expect(req.headers).toMatchObject(headers)
     expect(await req.json()).toEqual(body)
 })
 
@@ -53,6 +53,6 @@ it('processResponse', async () => {
     expect(res.ok).toBe(true)
     expect(res.status).toEqual(200)
     expect(res.statusText).toEqual('OK')
-    expect(res.headers).toEqual(new Headers({Foo: 'bar'}))
+    expect(res.headers).toMatchObject(new Headers({Foo: 'bar'}))
     expect(res.body).toEqual({spam: 'eggs'})
 })
