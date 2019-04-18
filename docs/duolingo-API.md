@@ -23,7 +23,7 @@ Mock: [config.json](../mocks/config.json)
 
 ### `https://www.duolingo.com/users/${USERNAME}`
 
-Mock: [users-unauth.json](../mocks/users-unauth.json)
+Mock: [users.json](../mocks/users.json)
 
 * Returns a lot of information about a user; consider caching.
 * This endpoint returns more information if you are logged-in as this user.
@@ -44,6 +44,30 @@ Mock: [users-unauth.json](../mocks/users-unauth.json)
 If you just want to get generic Duolingo information (e.g. `languages`), but
 for some reason you don't want to use your own user, username `Luis` is the
 CEO. 😜
+
+### `https://www.duolingo.com/2017-06-30/users/${USER_ID}`
+
+Mock: [users-20170630.json](../mocks/users-20170630.json)
+
+* This is a much more concise endpoint than the previous users endpoint.
+* The `courses` field only includes languages the user has started, unlike
+  the unauthenticated endpoint.
+* This endpoint returns more information if you are logged-in as this user.
+  * If logged-in, the `skills` field is available, but it does not contain
+    any lexemes (words).
+* You can `PATCH` this endpoint to modify the user.
+  * This requires being logging-in as this user.
+  * You can change the active course by setting either `courseId` or both
+    `fromLanguage` and `learningLanguage`.
+
+### `https://www.duolingo.com/2017-06-30/users?username=${USERNAME}`
+
+Mock: [users-20170630.json](../mocks/users-20170630.json)
+
+* This is basically identical to the previous endpoint, but allows querying
+  by name instead of id.
+* In this response the entire user object from the previous endpoint is
+  nested under a `users` array field.
 
 ### `http://d2.duolingo.com/api/1/dictionary/hints/${TO}/${FROM}`
 
@@ -92,30 +116,6 @@ These endpoints require the following headers:
 
 The login endpoint also sets cookies, but these do not seem to be needed.
 (One of the cookies just holds the JWT anyway.)
-
-### `https://www.duolingo.com/2017-06-30/users/${USER_ID}`
-
-Mock: [users-auth.json](../mocks/users-auth.json)
-
-* Requires query parameter `fields`, which is a comma-separated list of
-  fields to include in the response (response shaping). Passing `*` will
-  return all fields.
-* This is a much more concise endpoint compared to unauthenticated users.
-* The `courses` field only includes languages the user has started, unlike
-  the unauthenticated endpoint.
-* This endpoint returns more information if you are logged-in as this user.
-  * If logged-in, the `skills` field is available.
-* You can `PATCH` this endpoint to modify the user.
-  * You can change the active course by setting either `courseId` or both
-    `fromLanguage` and `learningLanguage`.
-
-### `https://www.duolingo.com/2017-06-30/users?username=${USERNAME}`
-
-Mock: [users-auth.json](../mocks/users-auth.json)
-
-* This is identical to the previous endpoint, but allows querying by name
-  instead of id.
-* Oddly, this version does _not_ require the `fields` query parameter.
 
 ### `https://www.duolingo.com/2017-06-30/users/${USER_ID}/subscriptions`
 

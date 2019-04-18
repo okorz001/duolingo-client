@@ -24,7 +24,7 @@ const ENDPOINTS = [
     },
     {
         url: `https://www.duolingo.com/users/${USER_NAME}`,
-        out: 'users-unauth.json',
+        out: 'users.json',
     },
     {
         url: 'https://d2.duolingo.com/api/1/dictionary/hints/en/es?token=one',
@@ -51,8 +51,7 @@ const ENDPOINTS = [
         // Both of these return the same thing
         //url: `https://www.duolingo.com/2017-06-30/users/${USER_ID}?fields=*`,
         url: `https://www.duolingo.com/2017-06-30/users?username=${USER_NAME}`,
-        auth: true,
-        out: 'users-auth.json',
+        out: 'users-20170630.json',
     },
     {
         url: `https://www.duolingo.com/2017-06-30/users/${USER_ID}/subscriptions`,
