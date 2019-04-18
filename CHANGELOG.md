@@ -21,6 +21,7 @@ Added `getCourses`, `setCurrentCourse`.
 `getLanguage` is replaced by `getCourseSkills`:
 * This takes a course id instead of a language id, e.g. `DUOLINGO_ES_EN`
   instead of `es`.
+* If a username is omitted, then the logged-in user will be used.
 * This only returns the `skills` array. Other course information can be found
   with `getCourses`.
 * Added `urlTitle` property to skills.

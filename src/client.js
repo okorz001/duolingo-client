@@ -186,6 +186,7 @@ class DuolingoClient {
      * @retun {Promise<Skill[]>} The skills from the course.
      */
     async getCourseSkills(courseId, username) {
+        username = username || this.auth.username
         // TODO: Find a way to discover skills without a user
         const url = `https://www.duolingo.com/users/${username}`
         const res = await jsonHttpFetch('GET', url)
