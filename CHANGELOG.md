@@ -8,9 +8,6 @@ between courses and languages.
 
 Added `getCourses`, `setCurrentCourse`.
 
-`translate` now accepts both new and old language codes, e.g. `zh-CN` and
- `zs`. Newer codes are preferred as older codes may be deprecated later.
-
 `getUser` changes:
 * `streak.length` is now just `streak`. Other streak fields are no longer
    available.
@@ -29,6 +26,10 @@ Added `getCourses`, `setCurrentCourse`.
 `getSkill` is replaced by `getSkillWords`:
 * This only returns the `words` array. Other skill information can be found
   with `getCourseSkills`.
+
+`translate` changes:
+* Takes a course id instead of two language ids.
+* Also fixed a bug where the language ids were reversed.
 
 ### 1.0.0 (2019-04-14)
 

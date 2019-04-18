@@ -20,3 +20,9 @@ withAuth('setCurrentCourse', async () => {
     user = await client.getUser(DUOLINGO_USERNAME)
     expect(user.currentCourseId).toEqual('DUOLINGO_VI_EN')
 }, 10000)
+
+it('translate', async () => {
+    const client = new DuolingoClient()
+    const words = await client.translate('DUOLINGO_ES_EN', ['uno'])
+    expect(words[0]).toContainEqual('one')
+})

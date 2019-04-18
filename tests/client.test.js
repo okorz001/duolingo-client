@@ -111,7 +111,8 @@ it('getSkillWords', async () => {
 it('translate', async () => {
     mockFetch('hints-tokens.json')
     const client = new DuolingoClient()
-    const translations = await client.translate('en', 'es', ['one', 'two'])
+    const translations = await client.translate('DUOLINGO_EN_ES',
+                                                ['one', 'two'])
     expect(translations).toEqual([
         ['un', 'una', 'uno', '1'],
         ['dos', '2'],

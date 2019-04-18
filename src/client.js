@@ -238,16 +238,17 @@ class DuolingoClient {
     }
 
     /**
-     * Translates a list of words. Each word may have more than one possible
-     * translation.
-     * @param {string} from The id of the language to translate from.
-     * @param {string} to The id of the language to translate to.
+     * Translates a list of words from a course. Each word may have more than
+     * one possible translation.
+     * @param {string} courseId The id of the course that the words belong to.
      * @param {string[]} words The list of words to translate.
      * @return {string[][]} A list of translations for every word.
      */
-    async translate(from, to, words) {
-        from = toLegacyLanguageId(from)
-        to = toLegacyLanguageId(to)
+    async translate(courseId, words) {
+        const {learningLanguageId, fromLanguageId} = parseCourseId(courseId)
+        // from the language we are learning
+        const from = toLegacyLanguageId(learningLanguageId)
+        const to = toLegacyLanguageId(fromLanguageId)
         const tokens = encodeURIComponent(JSON.stringify(words))
         const url = `http://d2.duolingo.com/api/1/dictionary/hints/${from}/${to}?tokens=${tokens}`
         const res = await jsonHttpFetch('GET', url)
