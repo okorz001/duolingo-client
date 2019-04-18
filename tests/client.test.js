@@ -39,28 +39,21 @@ function mockFetch(filename) {
 }
 
 it('getUser', async () => {
-    mockFetch('users.json')
+    mockFetch('users-20170630.json')
     const client = new DuolingoClient()
     const user = await client.getUser('racsoTest1')
     expect(user).toMatchObject({
         id: 491392036,
         username: 'racsoTest1',
         displayName: 'Racso',
-        streak: {
-            length: 1,
-            extended: false,
-            freeze: false,
-        },
-        languages: [
+        streak: 1,
+        currentCourseId: 'DUOLINGO_VI_EN',
+        courses: [
             {
-                id: 'vi',
-                name: 'Vietnamese',
-                level: 1,
-                points: 30,
+                id: 'DUOLINGO_VI_EN',
+                xp: 30,
             },
         ],
-        activeLanguage: 'vi',
-        currentCourseId: 'DUOLINGO_VI_EN',
     })
 })
 
@@ -85,38 +78,34 @@ it('getCourses', async () => {
     expect(courses.length).toEqual(100)
 })
 
-it('getLanguage', async () => {
+it('getCourseSkills', async () => {
     mockFetch('users.json')
     const client = new DuolingoClient()
-    const lang = await client.getLanguage('vi', 'racsoTest1')
-    expect(lang).toMatchObject({
-        id: 'vi',
-        name: 'Vietnamese',
+    const skills = await client.getCourseSkills('DUOLINGO_VI_EN', 'racsoTest1')
+    expect(skills[0]).toEqual({
+        id: '4162b2891e4ba0aa19092655e2d13039',
+        title: 'Basics 1',
+        urlTitle: 'Basics-1',
     })
-    expect(lang.skills[0]).toEqual({
-        id: '1e791efe88b8b43be8a11f1e5da85184',
-        title: 'Clothing',
-    })
-    expect(lang.skills.length).toEqual(84)
+    expect(skills.length).toEqual(84)
 })
 
-it('getLanguage not active', async () => {
+it.each([
+    ['DUOLINGO_ES_EN'],
+    ['DUOLINGO_VI_FR'],
+    ['DUOLINGO_EN_VI'],
+])('getCourseSkills not current', async (courseId) => {
     mockFetch('users.json')
     const client = new DuolingoClient()
-    await expect(client.getLanguage('es', 'racsoTest1')).rejects.toThrow()
+    await expect(client.getCourseSkills(courseId, 'racsoTest1')).rejects.toThrow()
 })
 
-it('getSkill', async () => {
+it('getSkillWords', async () => {
     mockFetch('skills.json')
     const client = new DuolingoClient()
-    const skill = await client.getSkill('7df994e56b4513b3517f911b56e142d2')
-    expect(skill).toMatchObject({
-        id: '7df994e56b4513b3517f911b56e142d2',
-        language: 'es',
-        title: 'Introduction',
-    })
-    expect(skill.words[0]).toBe('el')
-    expect(skill.words.length).toBe(26)
+    const words = await client.getSkillWords('7df994e56b4513b3517f911b56e142d2')
+    expect(words[0]).toBe('el')
+    expect(words.length).toBe(26)
 })
 
 it('translate', async () => {
@@ -161,6 +150,8 @@ it('buyItem already bought', async () => {
 it.each([
     ['es', 'en', 'DUOLINGO_ES_EN'],
     ['en', 'ru', 'DUOLINGO_EN_RU'],
+    ['zh-CN', 'en', 'DUOLINGO_ZH-CN_EN'],
+    ['en', 'zh-CN', 'DUOLINGO_EN_ZH-CN'],
 ])('getCourseId %s %s', (learningLanguageId, fromLanguageId, courseId) => {
     const result = getCourseId(learningLanguageId, fromLanguageId)
     expect(result).toEqual(courseId)
@@ -169,6 +160,8 @@ it.each([
 it.each([
     ['DUOLINGO_ES_EN', 'es', 'en'],
     ['DUOLINGO_EN_RU', 'en', 'ru'],
+    ['DUOLINGO_ZH-CN_EN', 'zh-CN', 'en'],
+    ['DUOLINGO_EN_ZH-CN', 'en', 'zh-CN'],
 ])('parseCourseId %s', (courseId, learningLanguageId, fromLanguageId) => {
     const result = parseCourseId(courseId)
     expect(result).toMatchObject({

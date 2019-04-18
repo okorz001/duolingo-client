@@ -2,15 +2,42 @@ const jsonHttpFetch = require('./json-http-fetch')
 const login = require('./login')
 
 function getCourseId(learningLanguageId, fromLanguageId) {
+    learningLanguageId = fromLegacyLanguageId(learningLanguageId)
+    fromLanguageId = fromLegacyLanguageId(fromLanguageId)
     return `DUOLINGO_${learningLanguageId.toUpperCase()}_${fromLanguageId.toUpperCase()}`
 }
 
 function parseCourseId(courseId) {
-    const match = /^DUOLINGO_(\w+)_(\w+)$/.exec(courseId)
+    const match = /^DUOLINGO_(\w+)(-\w+)?_(\w+)(-\w+)?$/.exec(courseId)
     return {
-        learningLanguageId: match[1].toLowerCase(),
-        fromLanguageId: match[2].toLowerCase(),
+        learningLanguageId: match[1].toLowerCase() + (match[2] || ''),
+        fromLanguageId: match[3].toLowerCase() + (match[4] || ''),
     }
+}
+
+// some languages do not use ISO language codes in some (older?) APIs
+// https://www.duolingo.com/api/1/courses/list
+const LEGACY_LANGUAGE_IDS = [
+    // norwegian
+    {iso: 'no-BO', legacy: 'nb'},
+    // dutch
+    {iso: 'nl-NL', legacy: 'dn'},
+    // klingon
+    {iso: 'tlh', legacy: 'kl'},
+    // chinese
+    {iso: 'zh-CN', legacy: 'zs'},
+]
+
+// zs => zh-CN
+function fromLegacyLanguageId(languageId) {
+    return LEGACY_LANGUAGE_IDS.find(it => it.legacy == languageId) ||
+        languageId
+}
+
+// zh-CN => zs
+function toLegacyLanguageId(languageId) {
+    return LEGACY_LANGUAGE_IDS.find(it => it.iso == languageId) ||
+        languageId
 }
 
 /**
@@ -61,61 +88,42 @@ class DuolingoClient {
      * @prop {integer} id The user's id.
      * @prop {string} username The user's username.
      * @prop {string} displayName The user's display name.
-     * @prop {UserStreak} streak The user's streak information.
-     * @prop {UserLanguage[]} languages Langauges being learned by this user.
-     * @prop {string} activeLanguage The language id currently being learned
-     *                               by this user.
+     * @prop {boolean} hasPlus Is this user a Plus subscriber?
+     * @prop {integer} streak The user's streak length.
      * @prop {string} currentCourseId The id of the course that is currently
      *                                active for this user.
-     * @deprecated languages, activeLanguage
+     * @prop {UserCourse[]} courses The courses started by this user.
      */
     /**
-     * @typedef UserStreak
-     * @prop {integer} length The user's streak length.
-     * @prop {boolean} extended Is the streak extended today?
-     * @prop {boolean} freeze Is streak freeze equipped?
+     * @typedef UserCourse
+     * @prop {string} id The course id.
+     * @prop {integer} points The experience earned in this course.
      */
     /**
-     * @typedef UserLanguage
-     * @prop {string} id The language id.
-     * @prop {string} name The language display name.
-     * @prop {integer} level The level of the user in this language.
-     * @prop {integer} points The points of the user in this language.
-     */
-    /**
-     * Fetches a user by username.
+     * Gets a user by username.
      * @param {string} username The username to fetch.
      * @return {Promise<User>} The user.
      */
     async getUser(username) {
-        // this URL returns more data when you are logged in as the same user
-        const url = `https://www.duolingo.com/users/${username}`
+        const url = `https://www.duolingo.com/2017-06-30/users?username=${username}`
         const res = await jsonHttpFetch('GET', url)
-        const languages = res.body.languages
-            // ignore languages that aren't being learned
-            .filter(it => it.learning)
+        const user = res.body.users[0]
+        const courses = user.courses
             .map(it => ({
-                id: it.language,
-                name: it.language_string,
-                level: it.level,
-                points: it.points,
+                id: it.id,
+                xp: it.xp,
             }))
-            // order by points descending
-            .sort((a, b) => b.points - a.points)
+            // order by xp descending
+            .sort((a, b) => b.xp - a.xp)
         return {
-            id: res.body.id,
-            username: res.body.username,
+            id: user.id,
+            username: user.username,
             // fullname may be undefined
-            displayName: res.body.fullname || res.body.username,
-            streak: {
-                length: res.body.site_streak,
-                extended: res.body.streak_extended_today,
-                freeze: !!res.body.inventory.streak_freeze,
-            },
-            languages,
-            activeLanguage: res.body.learning_language,
-            currentCourseId: getCourseId(res.body.learning_language,
-                                         res.body.ui_language),
+            displayName: user.name || user.username,
+            hasPlus: user.hasPlus,
+            streak: user.streak,
+            currentCourseId: user.currentCourseId,
+            courses,
         }
     }
 
@@ -132,6 +140,11 @@ class DuolingoClient {
      * @prop {integer} usersCount The number of users taking the course.
      */
     /**
+     * @typedef Language
+     * @prop {string} id The id of this language.
+     * @prop {string} name The display name of this language.
+     */
+    /**
      * Gets all available courses.
      * @return {Promise<Course[]>} All available courses.
      */
@@ -139,14 +152,14 @@ class DuolingoClient {
         const url = 'https://www.duolingo.com/api/1/courses/list'
         const res = await jsonHttpFetch('GET', url)
         return res.body.map(course => ({
-            id: getCourseId(course.learning_language,
-                            course.from_language),
+            id: getCourseId(course.learning_language_id,
+                            course.from_language_id),
             learningLanguage: {
-                id: course.learning_language,
+                id: course.learning_language_id,
                 name: course.learning_language_name,
             },
             fromLanguage: {
-                id: course.from_language,
+                id: course.from_language_id,
                 name: course.from_language_name,
             },
             phase: course.phase,
@@ -156,63 +169,57 @@ class DuolingoClient {
     }
 
     /**
-     * @typedef Language
-     * @prop {string} id The id of this language.
-     * @prop {string} name The display name of this language.
-     * @prop {LanguageSkill[]} skills The skills in this language.
-     * @deprecated Skills will be removed from Language.
+     * @typedef Skill
+     * @prop {string} id The unique skill id.
+     * @prop {string} title The course-scoped display name of this skill.
+     * @prop {string} urlTitle The course-scoped URL path of this skill.
      */
     /**
-     * @typedef LanguageSkill
-     * @prop {string} id The id of the skill.
-     * @prop {string} title The language-scoped display name of the skill.
-     */
-    /**
-     * Fetches a language by id.
+     * Gets the skills taught in a course.
      * <p>
      * <b>Note:</b> This currently requires a user that is currently
-     * learning the language but the response does not include any
+     * taking the course but the result does not include any
      * user-specific data. This requirement may be dropped if a better
      * Duolingo API is discovered.
-     * @param {string} language The id of the language to fetch.
-     * @param {string} username The username of a user currently learning
-     *                          the requested language.
-     * @return {Promise<Language>} The language.
+     * @param {string} courseId The course to get the skills from.
+     * @param {string} username A user who is currently studying the course.
+     * @retun {Promise<Skill[]>} The skills from the course.
      */
-    async getLanguage(language, username) {
-        // TODO: Find a way to discover skills/language without a user
+    async getCourseSkills(courseId, username) {
+        // TODO: Find a way to discover skills without a user
         const url = `https://www.duolingo.com/users/${username}`
         const res = await jsonHttpFetch('GET', url)
-        const data = res.body.language_data[language]
-        if (!data) {
-            throw new Error(`${language} is not the active language for ${username}`)
+
+        // confirm user's current course
+        const currentCourseId = getCourseId(res.body.learning_language,
+                                            res.body.ui_language)
+        if (currentCourseId != courseId) {
+            throw new Error(`The current course for ${username} is ${currentCourseId}, not ${courseId}`)
         }
-        const skills = data.skills.map(it => ({
-            id: it.id,
-            title: it.title,
-        }))
-        return {
-            id: data.language,
-            name: data.language_string,
-            skills,
-        }
+
+        const data = res.body.language_data[res.body.learning_language]
+        return data.skills
+            .sort((a, b) => {
+                if (a.coords_y != b.coords_y) {
+                    return a.coords_y - b.coords_y
+                }
+                return a.coords_x - b.coords_x
+            })
+            .map(it => ({
+                id: it.id,
+                title: it.title,
+                urlTitle: it.url_title,
+            }))
     }
 
     /**
-     * @typedef Skill
-     * @prop {string} id The unique skill id.
-     * @prop {string} language The language id of this skill.
-     * @prop {string} title The language-scoped display name of this skill.
-     * @prop {string[]} words The words in this skill.
-     */
-    /**
-     * Fetches a skill by id.
+     * Gets the words taught in a skill.
      * <p>
      * <b>Requires authentication.</b>
-     * @param {string} id The skill id to fetch.
-     * @return {Promise<Skill>} The skill.
+     * @param {string} id The id of the skill to get words from.
+     * @return {Promise<String[]>} The words in the skill.
      */
-    async getSkill(id) {
+    async getSkillWords(id) {
         if (!this.auth) {
             throw new Error('Login required')
         }
@@ -226,13 +233,7 @@ class DuolingoClient {
             // Ignore any lessons without words (???)
             .filter(it => it.words)
             .forEach(it => words.push(...it.words))
-
-        return {
-            id: res.body.id,
-            language: res.body.language,
-            title: res.body.title,
-            words,
-        }
+        return words
     }
 
     /**
@@ -244,6 +245,8 @@ class DuolingoClient {
      * @return {string[][]} A list of translations for every word.
      */
     async translate(from, to, words) {
+        from = toLegacyLanguageId(from)
+        to = toLegacyLanguageId(to)
         const tokens = encodeURIComponent(JSON.stringify(words))
         const url = `http://d2.duolingo.com/api/1/dictionary/hints/${to}/${from}?tokens=${tokens}`
         const res = await jsonHttpFetch('GET', url)
@@ -296,25 +299,23 @@ class DuolingoClient {
         return this.buyItem('streak_freeze')
     }
 
+    // TODO: some items are course scoped but the API only accepts legacy ids
+    // for learning languages
     /**
      * Buy an item for the logged-in user.
      * <p>
-     * Some items, such as extra skills, are scoped to a particular language.
-     * To purchase such an item, the language must be specified.
-     * <p>
      * <b>Requires authentication.</b>
      * @param {string} item The id of the item to buy.
-     * @param {string} language Optional: The language to buy the item for/in.
      * @return {Promise<boolean>} Returns true if the item was bought, or
      *                            false if this user already has the item.
      */
-    async buyItem(item, language) {
+    async buyItem(item) {
         if (!this.auth) {
             throw new Error('Login required')
         }
 
         const url = `https://www.duolingo.com/2017-06-30/users/${this.auth.userId}/purchase-store-item`
-        const body = {name: item, learningLanguage: language}
+        const body = {name: item, learningLanguage: null}
         const res = await jsonHttpFetch('POST', url, this.auth.headers, body)
         if (res.body.error == 'ALREADY_HAVE_STORE_ITEM') {
             return false
@@ -328,7 +329,7 @@ class DuolingoClient {
      * <b>Requires authentication.</b>
      * @param {string} courseId The course to switch to.
      */
-    async switchCourse(courseId) {
+    async setCurrentCourse(courseId) {
         if (!this.auth) {
             throw new Error('Login required')
         }

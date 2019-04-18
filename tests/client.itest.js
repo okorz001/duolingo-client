@@ -8,15 +8,15 @@ if (!DUOLINGO_USERNAME || !DUOLINGO_PASSWORD) {
                  'skipping authed tests')
 }
 
-withAuth('switchCourse', async () => {
+withAuth('setCurrentCourse', async () => {
     const client = new DuolingoClient()
     await client.login(DUOLINGO_USERNAME, DUOLINGO_PASSWORD)
 
-    await client.switchCourse('DUOLINGO_EN_VI')
+    await client.setCurrentCourse('DUOLINGO_EN_VI')
     let user = await client.getUser(DUOLINGO_USERNAME)
     expect(user.currentCourseId).toEqual('DUOLINGO_EN_VI')
 
-    await client.switchCourse('DUOLINGO_VI_EN')
+    await client.setCurrentCourse('DUOLINGO_VI_EN')
     user = await client.getUser(DUOLINGO_USERNAME)
     expect(user.currentCourseId).toEqual('DUOLINGO_VI_EN')
 }, 10000)
