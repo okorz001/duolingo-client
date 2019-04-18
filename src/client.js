@@ -249,7 +249,7 @@ class DuolingoClient {
         from = toLegacyLanguageId(from)
         to = toLegacyLanguageId(to)
         const tokens = encodeURIComponent(JSON.stringify(words))
-        const url = `http://d2.duolingo.com/api/1/dictionary/hints/${to}/${from}?tokens=${tokens}`
+        const url = `http://d2.duolingo.com/api/1/dictionary/hints/${from}/${to}?tokens=${tokens}`
         const res = await jsonHttpFetch('GET', url)
         return words.map(word => res.body[word])
     }

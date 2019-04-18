@@ -69,14 +69,14 @@ Mock: [users-20170630.json](../mocks/users-20170630.json)
 * In this response the entire user object from the previous endpoint is
   nested under a `users` array field.
 
-### `http://d2.duolingo.com/api/1/dictionary/hints/${TO}/${FROM}`
+### `http://d2.duolingo.com/api/1/dictionary/hints/${FROM}/${TO}`
 
 Mocks: [hints-token.json](../mocks/hints-token.json),
        [hints-tokens.json](../mocks/hints-tokens.json),
        [hints-sentence.json](../mocks/hints-sentence.json)
 
 * Different host, doesn't require HTTPS.
-* `TO` and `FROM` are language ids, e.g. `en` or `es`.
+* `FROM` and `TO` are language ids, e.g. `en` or `es`.
 * Requires exactly one of the following query parameters:
   * `token`: A single lexeme to translate, e.g. `one`. Note that a lexeme
     may include multiple words, e.g. `elder brother`.
