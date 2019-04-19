@@ -147,6 +147,7 @@ class DuolingoClient {
     /**
      * Gets all available courses.
      * @return {Promise<Course[]>} All available courses.
+     * @since 2.0.0
      */
     async getCourses() {
         const url = 'https://www.duolingo.com/api/1/courses/list'
@@ -184,6 +185,7 @@ class DuolingoClient {
      * @param {string} courseId The course to get the skills from.
      * @param {string} username A user who is currently studying the course.
      * @retun {Promise<Skill[]>} The skills from the course.
+     * @since 2.0.0
      */
     async getCourseSkills(courseId, username) {
         username = username || this.auth.username
@@ -219,6 +221,7 @@ class DuolingoClient {
      * <b>Requires authentication.</b>
      * @param {string} skillId The id of the skill to get words from.
      * @return {Promise<String[]>} The words in the skill.
+     * @since 2.0.0
      */
     async getSkillWords(skillId) {
         if (!this.auth) {
@@ -330,6 +333,7 @@ class DuolingoClient {
      * <p>
      * <b>Requires authentication.</b>
      * @param {string} courseId The course to switch to.
+     * @since 2.0.0
      */
     async setCurrentCourse(courseId) {
         if (!this.auth) {
