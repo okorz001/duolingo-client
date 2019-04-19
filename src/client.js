@@ -217,15 +217,15 @@ class DuolingoClient {
      * Gets the words taught in a skill.
      * <p>
      * <b>Requires authentication.</b>
-     * @param {string} id The id of the skill to get words from.
+     * @param {string} skillId The id of the skill to get words from.
      * @return {Promise<String[]>} The words in the skill.
      */
-    async getSkillWords(id) {
+    async getSkillWords(skillId) {
         if (!this.auth) {
             throw new Error('Login required')
         }
 
-        const url = `https://www.duolingo.com/api/1/skills/show?id=${id}`
+        const url = `https://www.duolingo.com/api/1/skills/show?id=${skillId}`
         const res = await jsonHttpFetch('GET', url, this.auth.headers)
 
         // Accumulate words from lessons
@@ -307,17 +307,17 @@ class DuolingoClient {
      * Buy an item for the logged-in user.
      * <p>
      * <b>Requires authentication.</b>
-     * @param {string} item The id of the item to buy.
+     * @param {string} itemId The id of the item to buy.
      * @return {Promise<boolean>} Returns true if the item was bought, or
      *                            false if this user already has the item.
      */
-    async buyItem(item) {
+    async buyItem(itemId) {
         if (!this.auth) {
             throw new Error('Login required')
         }
 
         const url = `https://www.duolingo.com/2017-06-30/users/${this.auth.userId}/purchase-store-item`
-        const body = {name: item, learningLanguage: null}
+        const body = {name: itemId, learningLanguage: null}
         const res = await jsonHttpFetch('POST', url, this.auth.headers, body)
         if (res.body.error == 'ALREADY_HAVE_STORE_ITEM') {
             return false
