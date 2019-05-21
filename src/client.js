@@ -146,6 +146,8 @@ class DuolingoClient {
      */
     /**
      * Gets all available courses.
+     * <p>
+     * <b>Requires authentication.</b>
      * @return {Promise<Course[]>} All available courses.
      * @since 2.0.0
      */
@@ -188,10 +190,14 @@ class DuolingoClient {
      * @since 2.0.0
      */
     async getCourseSkills(courseId, username) {
+        if (!this.auth) {
+            throw new Error('Login required')
+        }
+
         username = username || this.auth.username
         // TODO: Find a way to discover skills without a user
         const url = `https://www.duolingo.com/users/${username}`
-        const res = await jsonHttpFetch('GET', url)
+        const res = await jsonHttpFetch('GET', url, this.auth.headers)
 
         // confirm user's current course
         const currentCourseId = getCourseId(res.body.learning_language,

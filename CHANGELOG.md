@@ -1,3 +1,10 @@
+### 2.1.0
+
+#### DuolingoClient
+
+The underlying API call for `getCourseSkills` now requires authentication and
+the client will now require login and pass the headers.
+
 ### 2.0.0 (2019-04-18)
 
 Breaking changes were made to better support courses that have non-English
