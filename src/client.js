@@ -146,8 +146,6 @@ class DuolingoClient {
      */
     /**
      * Gets all available courses.
-     * <p>
-     * <b>Requires authentication.</b>
      * @return {Promise<Course[]>} All available courses.
      * @since 2.0.0
      */
@@ -179,6 +177,8 @@ class DuolingoClient {
      */
     /**
      * Gets the skills taught in a course.
+     * <p>
+     * <b>Requires authentication.</b>
      * <p>
      * <b>Note:</b> This currently requires a user that is currently
      * taking the course but the result does not include any
