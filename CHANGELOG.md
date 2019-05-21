@@ -1,4 +1,4 @@
-### 2.0.0 (2014-04-18)
+### 2.0.0 (2019-04-18)
 
 Breaking changes were made to better support courses that have non-English
 native/UI languages. These changes also include a better distinction
