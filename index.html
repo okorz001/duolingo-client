@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    <link type="text/css" rel="stylesheet" href="styles/custom.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav id="nav">
+    <h3 class="group-title"><a href="index.html">&#x3C; Home &#x3E;</a></h3><input class="search" placeholder="Search" type="text"><div class="list"><h3 class="group-title">Classes</h3><ul><li><a href="module-duolingo-client.DuolingoClient.html" class="className">DuolingoClient</a><ul class='methods'><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#buyItem" class="methodName">buyItem</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#buyStreakFreeze" class="methodName">buyStreakFreeze</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#getCourses" class="methodName">getCourses</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#getCourseSkills" class="methodName">getCourseSkills</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#getShopItems" class="methodName">getShopItems</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#getSkillWords" class="methodName">getSkillWords</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#getUser" class="methodName">getUser</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#login" class="methodName">login</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#logout" class="methodName">logout</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#setCurrentCourse" class="methodName">setCurrentCourse</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#translate" class="methodName">translate</a></li></ul></li></ul><h3 class="group-title">Modules</h3><ul><li><a href="module-duolingo-client.html" class="className">duolingo-client</a><ul class='methods'><li data-type='method'><a href="module-duolingo-client.html#.login" class="methodName">login</a></li></ul></li></ul><h3><a href="global.html">Global</a></h3></div>
+</nav>
+
+<div id="main">
+    
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+    <section class="readme">
+        <article><h1>Usage</h1><p>The <code>duolingo-client</code> package exposes both a high-level Duolingo API client as
+well as some low-level utility functions that can help you call the Duolingo
+API directly.</p>
+<h2>High-Level Client</h2><p>The high-level client is exported as the <code>DuolingoClient</code> class. This class
+handles request creation and response parsing and tries to present a reasonable
+data model for the Duolingo.</p>
+<h3>Creating a client</h3><p>Create an instance of <code>DuolingoClient</code> to use the Duolingo API.</p>
+<pre class="prettyprint source lang-js"><code>const {DuolingoClient} = require('duolingo-client')
+const client = new DuolingoClient()
+// call unauthenticated APIs</code></pre><h3>Logging in</h3><p>Some Duolingo APIs require authentication. To call an authenticated API, you
+must first login with a valid username and password.</p>
+<pre class="prettyprint source lang-js"><code>await client.login('username123', 'secret password')
+// call authenticated (or unauthenticated) APIs</code></pre><h3>Logging out</h3><p>You can discard user credentials by either logging in to a different user or
+by using the logout method.</p>
+<pre class="prettyprint source lang-js"><code>await client.login('username123', 'secret password')
+// call authenticated APIs as username 123
+
+await client.login('username456', 'another secret')
+// call authenticated APIs as username 456
+
+// this is NOT async because it's not actually an API call.
+client.logout()</code></pre><p>The <code>DuolingoClient</code> documentation describes what APIs are available and which
+APIs require authentication.</p>
+<h2>Low-Level Utilities</h2><h3>login</h3><p>The <code>login</code> function can be used to get a JWT for authenticated API calls.
+This is the underlying function for <code>DuolingoClient.login</code>.</p>
+<pre class="prettyprint source lang-js"><code>const {login} = require('duolingo-client')
+const {jwt, userId} = await login('username123', 'secret password')</code></pre><p>You can call the Duolingo API with any HTTP client by setting the
+<code>Authorization</code> header with the <code>Bearer</code> scheme.</p>
+<pre class="prettyprint source lang-js"><code>const headers = {Authorization: `Bearer ${jwt}`}
+// or
+setHeader('Authorization', `Bearer ${jwt}`)</code></pre><p>This function also returns the user's id. The user id is not needed for
+authorization, but some API calls use a user id instead of a username.</p></article>
+    </section>
+
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Tue, 21 May 2019 15:55:47 GMT using
+    <a href="https://www.npmjs.com/package/namis">Namis</a> theme.
+</footer>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.nicescroll/3.6.0/jquery.nicescroll.min.js"></script>
+<script src="scripts/namis.search.jquery.js"></script>
+<script>prettyPrint();
+(function($){
+    $('nav').niceScroll({
+        cursorwidth: 7,
+        hwacceleration: true,
+        cursorcolor: "#036564",
+        cursorborder: "1px solid #036564"
+    });
+
+    $('html').niceScroll({
+        cursorwidth: 10,
+        hwacceleration: true,
+        smoothscroll: true,
+        cursorminheight: 32,
+        enablemousewheel: true, // nicescroll can manage mouse wheel events
+        enablekeyboard: true // nicescroll can manage keyboard events
+        ,cursorcolor: "#033649"
+    });
+
+    $('#nav').search(['className', 'methodName']);
+})(jQuery);
+</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

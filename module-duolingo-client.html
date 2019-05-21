@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>duolingo-client - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    <link type="text/css" rel="stylesheet" href="styles/custom.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav id="nav">
+    <h3 class="group-title"><a href="index.html">&#x3C; Home &#x3E;</a></h3><input class="search" placeholder="Search" type="text"><div class="list"><h3 class="group-title">Classes</h3><ul><li><a href="module-duolingo-client.DuolingoClient.html" class="className">DuolingoClient</a><ul class='methods'><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#buyItem" class="methodName">buyItem</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#buyStreakFreeze" class="methodName">buyStreakFreeze</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#getCourses" class="methodName">getCourses</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#getCourseSkills" class="methodName">getCourseSkills</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#getShopItems" class="methodName">getShopItems</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#getSkillWords" class="methodName">getSkillWords</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#getUser" class="methodName">getUser</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#login" class="methodName">login</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#logout" class="methodName">logout</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#setCurrentCourse" class="methodName">setCurrentCourse</a></li><li data-type='method'><a href="module-duolingo-client.DuolingoClient.html#translate" class="methodName">translate</a></li></ul></li></ul><h3 class="group-title">Modules</h3><ul><li><a href="module-duolingo-client.html" class="className">duolingo-client</a><ul class='methods'><li data-type='method'><a href="module-duolingo-client.html#.login" class="methodName">login</a></li></ul></li></ul><h3><a href="global.html">Global</a></h3></div>
+</nav>
+
+<div id="main">
+    
+        <h1 class="page-title">duolingo-client</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        
+            
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description">The object returned by <code>require('duolingo-client')</code>.</div>
+        
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line4">line 4</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Classes</h3>
+
+        <dl>
+            <dt><a href="module-duolingo-client.DuolingoClient.html">DuolingoClient</a></dt>
+            <dd></dd>
+        </dl>
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".login"><span class="type-signature">(async, static) </span>login<span class="signature">(username, password)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#LoginResult">LoginResult</a>>}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Gets a JWT secret for calling APIs that require authentication. This also
+returns their user id which is needed for some API calls.
+</div>
+
+
+
+
+
+
+
+
+    
+
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>username</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The username to login as.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>password</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The user's password.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="login.js.html">login.js</a>, <a href="login.js.html#line16">line 16</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    A JWT for the user and their user id.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;<a href="global.html#LoginResult">LoginResult</a>></span>
+
+
+    </dd>
+</dl>
+
+        
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Tue, 21 May 2019 15:55:47 GMT using
+    <a href="https://www.npmjs.com/package/namis">Namis</a> theme.
+</footer>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.nicescroll/3.6.0/jquery.nicescroll.min.js"></script>
+<script src="scripts/namis.search.jquery.js"></script>
+<script>prettyPrint();
+(function($){
+    $('nav').niceScroll({
+        cursorwidth: 7,
+        hwacceleration: true,
+        cursorcolor: "#036564",
+        cursorborder: "1px solid #036564"
+    });
+
+    $('html').niceScroll({
+        cursorwidth: 10,
+        hwacceleration: true,
+        smoothscroll: true,
+        cursorminheight: 32,
+        enablemousewheel: true, // nicescroll can manage mouse wheel events
+        enablekeyboard: true // nicescroll can manage keyboard events
+        ,cursorcolor: "#033649"
+    });
+
+    $('#nav').search(['className', 'methodName']);
+})(jQuery);
+</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
